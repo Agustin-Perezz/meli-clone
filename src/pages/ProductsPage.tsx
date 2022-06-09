@@ -1,10 +1,16 @@
-import { Product } from "../components/products"
+import React from 'react';
 
-export const ProductsPage = () => {
+import { NavBar } from "../components/navbar"
+import { Products } from "../components/products"
+
+export const ProductsPage : React.FC = ({}) => {
+
+  const [queryProduct, setQueryProdct] = React.useState('');
+
   return (
     <div>
-      <h4> Products-Page </h4> 
-      <Product />
+      <NavBar setQueryProdct={ setQueryProdct } />
+      <Products queryProduct={ queryProduct }/>
     </div>
   )
 }

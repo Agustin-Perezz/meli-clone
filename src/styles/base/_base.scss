@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+// Variables
+$primary: #fff159;
+$white: #ffffff;
+$background: #ededed;
+$black_one: #333333;
+$black_two: #4d4b3c;
+$black_three: #666666;
+$color_count: #b9b4b5;
+$green: #3ba650;
+$green_background: #e6f7ee;
+$blue: #6c8cf7;
+$sort_color: #3483fa;
+$sort_hover: #d8d8d8d8;
+
+$breakpoints: (
+  sm: 540px,
+  md: 768px,
+  lg: 1024px,
+);
+
+// Mixin
+@mixin media-up( $breakpoint ) {
+  @media screen and ( min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin flex-box( $justify: center, $align: center, $wrap: nowrap ) {
+  display: flex; 
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// Basic Class
+.btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in 0s;
 }
