@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { useFetch } from '../../hooks';
 
 interface Props {
   queryProduct: string
@@ -7,9 +7,13 @@ interface Props {
 
 export const Products : React.FC<Props> = ({ queryProduct }) => {
 
-  console.log(`${ queryProduct }`);
+  const { data, loading, error } = useFetch({ product: queryProduct, typeFunction: 'getProducts' });  
 
   return (
-    <div>Example-Products</div>
+    <div>
+      <h4> Example-Products </h4>
+      { loading && <span> loading... </span> } 
+      { data &&  JSON.stringify( data ) } 
+    </div>
   )
 }

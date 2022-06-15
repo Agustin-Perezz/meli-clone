@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { NavBar } from "../components/navbar"
-import { Products } from "../components/products"
+import { Products } from '../components/products';
+import { NavBar } from '../components/navbar/NavBar';
 
-export const ProductsPage : React.FC = ({}) => {
+export const ProductsPage : React.FC = () => {
 
   const [queryProduct, setQueryProdct] = React.useState('');
 

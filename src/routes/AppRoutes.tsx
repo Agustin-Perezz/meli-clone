@@ -4,11 +4,11 @@ import { ProductsPage } from "../pages"
 export const AppRoutes = () => {
 
   return (
-    <BrowserRouter basename="/meli-clone">
+    <BrowserRouter basename="/meli-clone/">
       <Routes>
         <Route path="/" element={ <ProductsPage /> } />
         
-        <Route path="*" element={ <Navigate replace to="/meli-clone" /> }/> 
+        <Route path="*" element={ <Navigate replace to="/meli-clone/" /> }/> 
       </Routes>
     </BrowserRouter>
   )
