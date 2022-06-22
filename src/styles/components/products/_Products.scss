@@ -1,0 +1,14 @@
+.products {
+  background-color: $background;
+
+  &__title {
+    &::first-letter { text-transform: uppercase; }
+    padding: 15px 0px 0px 15px;
+    h3 {
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+    }
+  }
+
+}

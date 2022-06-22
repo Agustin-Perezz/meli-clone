@@ -1,0 +1,11 @@
+
+.container__products {
+  height: 100%;
+  margin: 12px 0px;
+  @include flex-box( center, center, wrap );
+
+  @include media-up ( lg ) { 
+    width: 885px;
+    margin: 20px auto;
+  }
+}
