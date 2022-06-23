@@ -1,21 +1,17 @@
-import React from 'react';
-import { useFetch } from '../../hooks';
-import { Filters } from './Filters';
+import React, { useContext } from 'react';
 import { ListProducts } from './ListProducts';
+import { ProductsContext } from '../../context/products';
+import { ListFilters } from './ListFilters';
 
-interface Props {
-  queryProduct: string
-}
+export const Products : React.FC = () => {
 
-export const Products : React.FC<Props> = ({ queryProduct }) => {
+  const { data, isLoadingData } = useContext( ProductsContext );
 
-  const { data, loading, error } = useFetch({ product: queryProduct, typeFunction: 'getProducts' });  
-
-  if ( loading ) return ( <span> loading... </span> );
+  if ( isLoadingData ) return ( <span> loading... </span> );
 
   if ( data ) return ( 
     <div className='products'>
-      <Filters />
+      <ListFilters />
       <div className="products__title">
         <h3> { data.basic_info.query } </h3>
       </div>
@@ -25,7 +21,7 @@ export const Products : React.FC<Props> = ({ queryProduct }) => {
 
   return (
     <div>
-      <h4> Example-Products </h4>
+      <h4> no buscaste nada che </h4>
     </div>
   )
 }

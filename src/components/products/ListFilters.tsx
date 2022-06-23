@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Filters : React.FC = ({}) => {
+export const ListFilters : React.FC = ({}) => {
   return ( 
     <div> 
       {`<Filters/>`} 

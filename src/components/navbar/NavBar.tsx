@@ -1,23 +1,22 @@
-import React, { FormEvent } from 'react';
+import React, { FormEvent, useContext } from 'react';
 import { useForm } from '../../hooks';
 import { SearchIcon, MenuIcon, LocationMarkerIcon, ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/outline';
+import { ProductsContext } from '../../context/products';
  
 import meli_logo_small from '../../assets/meli_logo_small.png';
 import meli_logo_large from '../../assets/meli_logo.png';
 import shopping_cart from '../../assets/shopping-cart.png';
 import disney from '../../assets/disney_publi.png';
 
-interface Props {
-  setQueryProdct: React.Dispatch<React.SetStateAction<string>>
-}
-
-export const NavBar : React.FC<Props> = ({ setQueryProdct }) => {
+export const NavBar : React.FC = () => {
 
   const { onChange, queryProduct } = useForm({ queryProduct: '' });
+
+  const { setQueryProduct } = useContext( ProductsContext );
   
   const handleSubmit = ( e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
-    setQueryProdct( queryProduct );
+    setQueryProduct( queryProduct );
   };
   
   return (

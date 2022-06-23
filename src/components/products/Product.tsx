@@ -25,7 +25,7 @@ export const Product : React.FC<Props> = ({ product }) => {
           <span className='box__information__price--fraction'>{ product.price }</span>
           { 
             product.offert !== false && 
-            <span className='box__information__price--offert'> a </span> 
+            <span className='box__information__price--offert'> { product.offert.offer_percentaje }% OFF </span> 
           } 
         </div>
           { 

@@ -39,7 +39,7 @@ export interface ResultProduct {
     full:          boolean;
     condition:     Condition;
     installments:  boolean | number;
-    offert:        boolean | OffertClass;
+    offert:        false | OffertClass;
 }
 
 export enum Condition {
