@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Roboto+Flex:opsz,wght@8..144,300;8..144,500&family=Roboto:wght@300&display=swap');
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Noto Sans', sans-serif;
-// font-family: 'Roboto Flex', sans-serif;
-
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
@@ -11,12 +6,20 @@
     url('../../assets/fonts/ProximaNova-Regular.otf') format('woff2'),
 }
 
+@font-face {
+  font-family: 'Proxima Nova Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../assets/fonts/Proxima-Nova-Alt-Light.otf') format('woff2'),
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 
-  font-family: 'Proxima Nova', sans-serif !important;
+  font-family: 'Proxima Nova';
   
   h1,
   h2,
@@ -33,14 +36,32 @@
     list-style-type: none;
   }
 
+  button {
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    list-style: none;
+  }
+  
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    // color: inherit;
+  }
+
 }
 
 // Variables
 $primary: #fff159;
 $white: #ffffff;
 $white_two: #b8b8b8;
+$white_three: #fafafa;
+$grey: #999;
 $black: #000000;
-$background: #ededed;
+$background: #F5F5F5;
 $black_one: #363636;
 $black_two: #4d4b3c;
 $black_three: #666666;

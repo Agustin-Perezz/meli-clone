@@ -1,0 +1,60 @@
+
+.list:first-child {
+  border-top: 1px solid rgba(0,0,0,.1) !important;
+}
+
+.list { 
+  width: 100%;
+  min-height: 48px;
+  max-height: max-content;
+
+  &__item {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  &__button {
+    @include flex-box( space-between );
+    padding: 22px 35px 22px 32px;
+  }
+  &__arrow {
+    stroke: $sort_color;
+    height: 14px;
+    width: 9px;
+    transition: all .3s;
+    transform: rotate(90deg);
+    &--up {
+      transform: rotateX(180deg);
+    }
+  }
+  &__link {
+    font-family: 'Proxima Nova Light';
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(0,0,0,.9);
+    display: block;
+    text-decoration: none;
+    &--inside {
+      display: block;
+      padding: 20px 0 20px 0;
+      color: $sort_color;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  &__show {
+    @include flex-box( center, flex-start );
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: none;
+    height: max-content;
+    background-color: $white_three;
+    transition: all .5s;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    &--open {
+      display: flex;
+    }
+  }
+}

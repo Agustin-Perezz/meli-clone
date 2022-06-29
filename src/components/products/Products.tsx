@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { ListProducts } from './ListProducts';
 import { ProductsContext } from '../../context/products';
-import { ListFilters } from './ListFilters';
+import { ListFiltersMobile } from './filters';
+import { ListProducts } from './items';
 
 export const Products : React.FC = () => {
 
@@ -11,7 +11,7 @@ export const Products : React.FC = () => {
 
   if ( data ) return ( 
     <div className='products'>
-      <ListFilters />
+      <ListFiltersMobile filters={ data.available_filters } />
       <div className="products__title">
         <h3> { data.basic_info.query } </h3>
       </div>

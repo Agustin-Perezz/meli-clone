@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ResultProduct } from '../../models/resultProducts';
+import { ResultProduct } from '../../../models/resultProducts';
 import { Product } from './Product';
 
 interface Props {
