@@ -1,0 +1,18 @@
+
+.not-found { 
+
+  &__container {
+    @include flex-box();
+    max-width: 1018px;
+    max-height: 204px;
+    margin: 48px auto;
+    padding: 42px 40px 32px;
+    border-radius: 4px;
+    background-color: $white;
+    h4 { margin-left: 10px; }
+  }
+  &__img { 
+    height: 202px !important;
+    object-fit: cover;
+  }
+}

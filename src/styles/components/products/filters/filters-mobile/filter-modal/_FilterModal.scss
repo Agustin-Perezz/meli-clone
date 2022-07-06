@@ -1,0 +1,44 @@
+
+.filters__mobile {
+  width: 100vw;
+  &__modal {
+    @include flex-box( center, flex-start );
+    flex-direction: column;
+    background-color: $white;
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    min-height: 100vh;
+    height: max-content;
+    visibility: hidden;
+    top: 100%;
+    transition: .250s all ease-in;
+    &--show {
+      visibility: visible;
+      top: 0px;
+    }
+  }
+
+  &__header { 
+    width: 100%;
+    position: relative;
+    &--title {
+      padding: 101px 32px 53px;
+    }
+    &--back {
+      position: absolute;
+      left: 27px; 
+      top: 16px;
+      cursor: pointer;
+    }
+    h1 { 
+      font-size: 2rem;
+      font-weight: 600;
+      color: rgba(0,0,0,.9);
+      line-height: 1; 
+    }
+  }
+  @include media-up( mdl ) { 
+    display: none;
+  }
+}

@@ -11,9 +11,9 @@ interface Props {
 export const NavBarFiltersMobile : React.FC<Props> = ({ setShowModal }) => {
   return (
     <nav className='filters__nav'> 
-      <div className="filters__nav__bottom">
-        <img src={ sync_icon } alt="" />
-        <button onClick={ () => setShowModal({ show: true, typeModa: 'sorts' })}> Ordenar </button>
+      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModa: 'sorts' })}>
+        <img src={ sync_icon } alt="sync-icon" />
+        <span> Ordenar </span>
       </div>
       <div className="filters__nav__arrives">
         <span> Llegan mañana </span>
@@ -22,9 +22,9 @@ export const NavBarFiltersMobile : React.FC<Props> = ({ setShowModal }) => {
           <span className='slider'></span>
         </label>
       </div>  
-      <div className="filters__nav__bottom">
-        <img src={ filter_icon } alt="" />
-        <button onClick={ () => setShowModal({ show: true, typeModa: 'filters' }) }> Filtrar </button>
+      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModa: 'filters' })}>
+        <img src={ filter_icon } alt="filter-icon"/>
+        <span > Filtrar </span>
       </div>
     </nav>
 )}

@@ -6,11 +6,14 @@ import { ProductsContext } from '../../context/products';
 import meli_logo_small from '../../assets/meli_logo_small.png';
 import meli_logo_large from '../../assets/meli_logo.png';
 import shopping_cart from '../../assets/shopping-cart.png';
+import location from '../../assets/location-icon.svg';
 import disney from '../../assets/disney_publi.png';
 
 export const NavBar : React.FC = () => {
 
-  const { onChange, queryProduct } = useForm({ queryProduct: '' });
+  const initialQuery = localStorage.getItem('queryProduct');
+
+  const { onChange, queryProduct } = useForm({ queryProduct: initialQuery || '' });
 
   const { setQueryProduct } = useContext( ProductsContext );
   
@@ -26,7 +29,7 @@ export const NavBar : React.FC = () => {
           <img className='nav__img--mobile' src={ meli_logo_small } alt="" />
           <img className='nav__img--desktop nav__img--xl' src={ meli_logo_large } alt="" />
           <div className="nav__location--desktop">
-            <LocationMarkerIcon className="nav__gps--desktop" /> 
+            <img src={ location } className="nav__gps--desktop" /> 
             <div className='nav__location--direction'>
               <small>Enviar a</small>
               <span>Capital Federal</span>
@@ -44,7 +47,7 @@ export const NavBar : React.FC = () => {
                 placeholder='Estoy buscando... '
                 autoComplete='off'
                 className='nav__input'
-              /> 
+                /> 
             </form>
             <ul className="nav__links">
               <div className='nav__links--category'>
@@ -67,14 +70,14 @@ export const NavBar : React.FC = () => {
             <li className="nav__link">Creá tu cuentá</li>
             <li className="nav__link">Ingresá</li>
             <li className="nav__link">Mis Compras</li>
-            <li className='nav__link'> <img src={ shopping_cart } alt="" className='nav__test'/> </li>
+            <li className='nav__link'> <img src={ shopping_cart } alt="" className='nav__shopping'/> </li>
           </ul>
         </div>
       </div>
       <hr className='nav__border' />
       <div className="nav__location">
         <div className='nav__location--block'>
-          <LocationMarkerIcon className='nav__gps'/>
+          <img src={ location } className="nav__gps" /> 
           <span> Enviar a Capital Federal </span>
         </div>
       <ChevronRightIcon className='nav__arrow'/> 

@@ -1,0 +1,29 @@
+.filters__desktop {
+  &__container {
+    display: none;
+    height: max-content;
+    min-width: 210px;
+    max-width: 294px;
+    padding-right: 14px;
+    @include media-up( mdl ) { 
+      display: block;
+    }
+  }
+  &__header {
+    margin-bottom: 30px;
+    padding-right: 16px;
+  }
+  &__query {
+    &::first-letter {  text-transform: uppercase; }
+    font-size: 26px;
+    color: $black_five;
+    font-weight: 600;
+  }
+  &__total {
+    font-size: 14px;
+    font-weight: 300;
+    color: $black_five;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+}

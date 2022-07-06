@@ -91,12 +91,12 @@
     height: 25px;
   }
   &__gps {
-    height: 18px;
+    height: 19px;
     color: $black_four;
     &--desktop {
       height: 25px;
-      color: $black_four;
       padding-right: 5px;
+      color: $black_four;
     }
   }
   &__arrow {
@@ -156,6 +156,10 @@
       flex: none;
     }
 
+    &__block--1 { 
+      padding-right: 20px;
+    }
+
     &__loupe {
       left: inherit;
       height: 18px;
@@ -168,7 +172,7 @@
       padding-left: 16px;
     }
 
-    &__test {
+    &__shopping {
       @include settings-img( 18px, 18px )
     }
 

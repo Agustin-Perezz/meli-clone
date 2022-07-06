@@ -1,14 +1,10 @@
-.products {
-  background-color: $background;
-
-  &__title {
-    &::first-letter { text-transform: uppercase; }
-    padding: 15px 0px 0px 15px;
-    h3 {
-      font-size: 16px;
-      color: #333;
-      font-weight: 500;
-    }
+.products__main__container {
+  @include media-up( mdl ) { 
+    @include flex-box( center, flex-start );
+    margin: 50px auto 0 auto;
+    padding-left: 10px;
+    padding-right: 28px;
+    max-width: 1215px;
+    background-color: $background;
   }
-
 }

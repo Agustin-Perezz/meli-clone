@@ -19,12 +19,10 @@
   }
   &__arrow {
     stroke: $sort_color;
-    height: 14px;
-    width: 9px;
+    height: 16px;
     transition: all .3s;
-    transform: rotate(90deg);
     &--up {
-      transform: rotateX(180deg);
+      transform: rotate(180deg);
     }
   }
   &__link {
@@ -36,6 +34,7 @@
     text-decoration: none;
     &--inside {
       display: block;
+      cursor: pointer;
       padding: 20px 0 20px 0;
       color: $sort_color;
       font-size: 18px;

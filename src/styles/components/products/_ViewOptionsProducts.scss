@@ -1,0 +1,108 @@
+
+.products__options {
+  position: relative;
+  display: none;
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+    color: $black_five;
+    margin-right: 4px;
+  }
+  &__dropdown {
+    font-size: 14px;
+    color: $black_three;
+    &:hover { cursor: pointer; }
+  }
+  &__icon {
+    height: 15px;
+    vertical-align: middle;
+    color: $sort_color;
+    transition: transform .2s;
+    &--show {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.float__menu {
+  position: absolute;
+  top: 28px;
+  right: -15px;
+  width: auto;
+  min-width: 135px;
+  background-color: $white;
+  position: absolute;
+  opacity: 0;
+  z-index: 99999;
+  box-shadow: 0 1px 2px 0rgba(0,0,0,.12);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  &--show {
+    opacity: 1;
+  }
+  &__item { 
+    font-family: 'Proxima Nova Variant', sans-serif;
+    max-height: 41px;
+    font-size: 14px;
+    color: $black_three;
+    font-weight: 400;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 13px 0 13px 16px;
+    position: relative;
+
+    &--active {
+      color: $sort_color;
+      background-color: $sort_hover;
+      &::after { 
+        content: '';
+        background: $sort_color !important;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 5px;
+        z-index: 0;
+
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $sort_hover;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background: $sort_hover_border;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 0;
+    }
+    &:hover::after {
+      width: 5px;
+    }
+
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      &::after {
+        border-top-left-radius: 6px;
+      }
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      &::after {
+        border-bottom-left-radius: 6px;
+      }
+    }
+
+  }
+}
+
+@include media-up( mdl ) { 
+  .products__options { 
+    display: block;
+  }
+}

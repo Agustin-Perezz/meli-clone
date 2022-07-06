@@ -1,0 +1,21 @@
+.categories__container {
+  width: 100%;
+  height: max-content;
+  margin: 0 0 18px;
+}
+
+.category__box {
+  display: inline;
+  &:last-child { svg { display: none; } }
+  &__name {
+    color: $black_three;
+    font-size: 14px;
+  }
+  &__icon { 
+    display: inline;
+    vertical-align: middle;
+    color: $black_three;
+    padding: 0;
+    height: 1em;
+  }
+}

@@ -13,6 +13,13 @@
   src:
     url('../../assets/fonts/Proxima-Nova-Alt-Light.otf') format('woff2'),
 }
+@font-face {
+  font-family: 'Proxima Nova Variant', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../assets/fonts/Proxima-Nova-Reg-It.otf') format('woff2'),
+}
 
 * {
   box-sizing: border-box;
@@ -20,7 +27,16 @@
   margin: 0;
 
   font-family: 'Proxima Nova';
-  
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
   h1,
   h2,
   h3,
@@ -49,7 +65,6 @@
   
   a, a:hover, a:focus, a:active {
     text-decoration: none;
-    // color: inherit;
   }
 
 }
@@ -72,11 +87,13 @@ $green: #00a650;
 $green_background: #e6f7ee;
 $blue: #6c8cf7;
 $sort_color: #3483fa;
-$sort_hover: #d8d8d8d8;
+$sort_hover: #F5F5F5;
+$sort_hover_border: #9cc4db;
 
 $breakpoints: (
   sm: 540px,
   md: 768px,
+  mdl: 875px,
   lg: 1180px,
 );
 

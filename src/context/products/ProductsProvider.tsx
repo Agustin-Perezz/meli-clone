@@ -51,6 +51,7 @@ export const ProductsProvider : React.FC<Props> = ({ children }) => {
     <ProductsContext.Provider value={{
       ...state,
 
+      // Methods
       setQueryProduct
     }}>
       { children }

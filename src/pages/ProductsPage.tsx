@@ -4,7 +4,7 @@ import { NavBar } from '../components/navbar/NavBar';
 
 export const ProductsPage : React.FC = () => {
   return (
-    <div>
+    <div className='main__search'>
       <NavBar  />
       <Products />
     </div>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ProductsContext } from '../../context/products';
-import { ListFiltersMobile } from './filters';
-import { ListProducts } from './items';
+import { ListFiltersDesktop, ListFiltersMobile } from './filters';
+import { ListProducts, NotFoundProduct } from './items';
 
 export const Products : React.FC = () => {
 
@@ -9,15 +9,26 @@ export const Products : React.FC = () => {
 
   if ( isLoadingData ) return ( <span> loading... </span> );
 
-  if ( data ) return ( 
-    <div className='products'>
-      <ListFiltersMobile filters={ data.available_filters } />
-      <div className="products__title">
-        <h3> { data.basic_info.query } </h3>
-      </div>
-      <ListProducts products={ data.result_products } />
+  if ( data !== null && data.basic_info.total !== 0 ) return ( 
+    <div className='products__main__container'>
+      <ListFiltersMobile 
+        filters={ data.available_filters }  
+      />
+      <ListFiltersDesktop 
+        filters={ data.available_filters } 
+        basic_information={ data.basic_info } 
+        categories={ data.categories } 
+      />
+      <ListProducts 
+        products={ data.result_products } 
+        name={ data.basic_info } 
+      />
     </div>
   );
+  
+  if ( data?.basic_info.total === 0 ) return ( 
+    <NotFoundProduct />
+  )
 
   return (
     <div>

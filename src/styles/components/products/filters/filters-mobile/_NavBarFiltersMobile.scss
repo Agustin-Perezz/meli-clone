@@ -5,6 +5,7 @@
   min-height: 53px;
   background-color: $white;
   border-bottom: 1px solid rgba(0,0,0,.07);
+  border-top: 1px solid rgba(0,0,0,.07);
   
   &__arrives {
     @include flex-box();
@@ -20,6 +21,7 @@
   &__bottom {
     @include flex-box();
     flex: 1 1 auto;
+    cursor: pointer;
     img {
       display: none;
       height: 14px;
@@ -27,7 +29,7 @@
       margin-right: 10px;
     }
   }
-  button {
+  span {
     color: $sort_color;
     font-size: 14px;
     font-weight: 400;

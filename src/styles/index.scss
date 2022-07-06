@@ -2,19 +2,30 @@
 // Base
 @import './base/base';
 
+// Pages
+@import './pages/ProductPage';
+
 // Components
 @import './components/navbar/NavBar';
 
 @import 
   './components/products/Product',
+  './components/products/ViewOptionsProducts',
   './components/products/ListProducts',
+  './components/products/NotFoundProduct',
   './components/products/Products';
 
 @import
   './components/products/filters/filters-mobile/ListFiltersMobile',
-  './components/products/filters/filters-mobile/FilterMobile',
   './components/products/filters/filters-mobile/NavBarFiltersMobile';
+
+@import
+  './components/products/filters/filters-mobile/filter-modal/FilterMobile',
+  './components/products/filters/filters-mobile/filter-modal/FilterModal',
+  './components/products/filters/filters-mobile/sort-modal/SortModal';
 
 @import 
   './components/products/filters/filters-desktop/ListFiltersDesktop',
   './components/products/filters/filters-desktop/FilterDesktop';
+  
+@import './components/products/categories/ListCategories';

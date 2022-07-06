@@ -1,0 +1,42 @@
+
+.filters__mobile { 
+  &__modal { 
+    justify-content: flex-start;
+  }
+}
+
+.sort__options { 
+  width: 100%;
+}
+.sort__option { 
+  @include flex-box( center, flex-start );
+  flex-direction: column;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  border-top: 1px solid rgba(0,0,0,.1);
+  &:last-child { 
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+  &--actived::before { 
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    border-left: 6px solid #3483fa;
+    height: 95%;
+    width: 5px;
+    z-index: 0;
+  }
+  &__text { 
+    font-family: 'Proxima Nova Light';
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(0,0,0,.9);
+    padding-left: 32px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+

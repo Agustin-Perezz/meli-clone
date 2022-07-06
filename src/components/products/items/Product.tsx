@@ -2,7 +2,6 @@
 import React from 'react';
 
 import { ResultProduct } from '../../../models/resultProducts';
-import { HeartIcon } from '@heroicons/react/outline';
 
 import full_icon from '../../../assets/full-icon.svg';
 import heart from '../../../assets/heart.png';

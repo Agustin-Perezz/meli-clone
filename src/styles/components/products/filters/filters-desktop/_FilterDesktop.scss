@@ -1,0 +1,31 @@
+.filter__desktop {
+  &__box {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 15px;
+  }
+  &__title {
+    font-size: 16px;
+    color: $black_five;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__children {
+    margin: 0 0 6px;
+    width: fit-content;
+    &:hover { cursor: pointer; }
+    span { 
+      font-size: 14px; 
+    }
+    &--name {
+      margin-left: 0;
+      color: rgb(117, 117, 117);
+      font-weight: 300;
+    }
+    &--total {
+      color: $grey;
+      font-weight: 400;
+      margin-left: 5px;
+    }
+  }
+}
