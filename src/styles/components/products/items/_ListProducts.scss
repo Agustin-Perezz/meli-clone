@@ -5,12 +5,13 @@
   @include flex-box( center, center, wrap );
   
   .products__header {
-    @include flex-box( flex-end, center );
+    @include flex-box( center, flex-start );
+    flex-direction: column;
     margin-top: 8px;
     width: 100%;
+    height: max-content;
     &__title {
-      margin-right: auto;
-      padding: 15px 0 15px 15px;
+      padding: 4px 0 15px 15px;
       &::first-letter { text-transform: uppercase; }
       h3 {
         font-size: 16px;
@@ -19,6 +20,8 @@
       }
     }
     @include media-up ( mdl ) { 
+      align-items: flex-end;
+      flex-direction: none;
       margin-bottom: 24px;
       &__title { display: none; }
     }

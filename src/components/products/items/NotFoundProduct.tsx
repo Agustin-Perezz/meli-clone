@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import not_found from '../../../assets/not-found-image.jpg';
+import not_found from '../../../assets/images/not-found-image.jpg';
 
 export const NotFoundProduct : React.FC<{}> = ({}) => {
   return (

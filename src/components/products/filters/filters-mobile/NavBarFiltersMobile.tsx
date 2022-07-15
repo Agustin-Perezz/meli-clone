@@ -1,17 +1,17 @@
 import React from 'react';
+import { StateModal } from './ListFiltersMobile';
 
-import sync_icon from '../../../../assets/sync_arrow.svg';
-import filter_icon from '../../../../assets/filter_icon.svg';
-import { StateProps } from './ListFiltersMobile';
+import sync_icon from '../../../../assets/svg/sync_arrow.svg';
+import filter_icon from '../../../../assets/svg/filter_icon.svg';
 
 interface Props {
-  setShowModal: React.Dispatch<React.SetStateAction<StateProps>>;
+  setShowModal: React.Dispatch<React.SetStateAction<StateModal>>;
 }
 
 export const NavBarFiltersMobile : React.FC<Props> = ({ setShowModal }) => {
   return (
     <nav className='filters__nav'> 
-      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModa: 'sorts' })}>
+      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModal: 'sorts' })}>
         <img src={ sync_icon } alt="sync-icon" />
         <span> Ordenar </span>
       </div>
@@ -22,7 +22,7 @@ export const NavBarFiltersMobile : React.FC<Props> = ({ setShowModal }) => {
           <span className='slider'></span>
         </label>
       </div>  
-      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModa: 'filters' })}>
+      <div className="filters__nav__bottom" onClick={ () => setShowModal({ show: true, typeModal: 'filters' })}>
         <img src={ filter_icon } alt="filter-icon"/>
         <span > Filtrar </span>
       </div>

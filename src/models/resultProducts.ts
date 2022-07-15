@@ -21,8 +21,8 @@ export interface Value {
 }
 
 export interface AvailableSort {
-    id:   string;
-    name: string;
+    name: 'Más relevante' | 'Menor precio' | 'Mayor precio';
+    id: 'relevance' | 'price_asc' | 'price_desc';
 }
 
 export interface BasicInfo {

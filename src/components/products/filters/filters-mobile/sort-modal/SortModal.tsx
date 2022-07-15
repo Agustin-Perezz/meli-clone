@@ -1,15 +1,30 @@
 
-import React from 'react';
-import { StateProps } from '../ListFiltersMobile';
+import React, { useContext } from 'react';
+import { StateModal } from '../ListFiltersMobile';
+import { AvailableSort } from '../../../../../models/resultProducts';
+import { FiltersContext } from '../../../../../context/filters-context/FiltersContext';
 
-import go_back from '../../../../../assets/go_back.svg';
+import go_back from '../../../../../assets/svg/go_back.svg';
 
 interface Props { 
-  setShowModal: React.Dispatch<React.SetStateAction<StateProps>>;
+  setShowModal: React.Dispatch<React.SetStateAction<StateModal>>;
   show: boolean;
+  sorts: AvailableSort[];
 }
 
-export const SortModal : React.FC<Props> = ({ setShowModal, show }) => {
+interface idSort { 
+  id: 'relevance' | 'price_asc' | 'price_desc';
+}
+
+export const SortModal : React.FC<Props> = ({ setShowModal, show, sorts }) => {
+
+  const { idSortActive, setSort } = useContext( FiltersContext );
+
+  const handleClick = ({ id } : idSort ) => {
+    setSort({ idSortActive: id });
+    setShowModal({ show: false });
+  }
+  
   return (
     <div className={`filters__mobile__modal ${ show && 'filters__mobile__modal--show' }`}>
       <div className="filters__mobile__header">
@@ -20,15 +35,17 @@ export const SortModal : React.FC<Props> = ({ setShowModal, show }) => {
         <h1 className='filters__mobile__header--title'> Ordenar por </h1>
       </div>
       <ul className="sort__options">
-        <li className="sort__option">
-          <span className='sort__option__text sort__option--actived'>Más relevantes</span>
-        </li>
-        <li className="sort__option">
-          <span className='sort__option__text'>Menor precio</span>
-        </li>
-        <li className="sort__option">
-          <span className='sort__option__text'>Mayor precio</span>
-        </li>
+        {
+          sorts.map(({ name, id }, index ) => ( 
+            <li 
+              className={`sort__option ${ id === idSortActive && 'sort__option--actived' }`} 
+              key={ index }
+              onClick={() => handleClick({ id })} 
+            >
+              <span className='sort__option__text'> { name } </span>
+            </li>
+          ))
+        }
       </ul>
     </div>
 )}

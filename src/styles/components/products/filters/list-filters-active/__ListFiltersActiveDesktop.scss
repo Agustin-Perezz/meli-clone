@@ -1,0 +1,32 @@
+
+.filters__active__desktop {
+  @include flex-box( flex-start, center, wrap );
+  width: 100%;
+  margin-top: 16px;
+
+  &__filter {
+    @include flex-box();
+    font-family: 'Proxima Nova Variant', sans-serif;
+    font-size: 13px;
+    height: 32px;
+    max-height: 26px;
+    width: max-content;
+    margin: 0 8px 8px 0;
+    padding: 0 .2857142857em;
+    border-radius: 1px; 
+    background-color: $white;
+    cursor: pointer;
+    &--label {
+      font-size: inherit;
+      color: rgba(0,0,0,.62);
+      padding: 0 0.53em;
+      &:hover { color: rgba(0,0,0,.50); }
+    }
+    &--icon { 
+      height: 16px;
+      width: 16px;
+      margin-right: 1px;
+    }
+  }
+
+}

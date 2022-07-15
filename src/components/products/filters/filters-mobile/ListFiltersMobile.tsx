@@ -1,22 +1,22 @@
 import React from 'react';
-import { AvailableFilter } from '../../../../models/resultProducts';
+import { AvailableFilter, AvailableSort } from '../../../../models/resultProducts';
 import { NavBarFiltersMobile } from './NavBarFiltersMobile';
-
 import { FilterModal } from './filter-modal/FilterModal';
 import { SortModal } from './sort-modal/SortModal';
 
 interface Props {
   filters: AvailableFilter[];
+  sorts: AvailableSort[];
 }
 
-export interface StateProps {
+export interface StateModal {
   show: boolean;
-  typeModa?: 'filters' | 'sorts';
+  typeModal?: 'filters' | 'sorts';
 }
 
-export const ListFiltersMobile : React.FC<Props> = ({ filters }) => {
+export const ListFiltersMobile : React.FC<Props> = ({ filters, sorts }) => {
   
-  const [{ show, typeModa }, setSettingsModal ] = React.useState<StateProps>({
+  const [{ show, typeModal: typeModa }, setSettingsModal ] = React.useState<StateModal>({
     show: false,
   });
 
@@ -28,7 +28,7 @@ export const ListFiltersMobile : React.FC<Props> = ({ filters }) => {
           ( <FilterModal filters={ filters} setShowModal={ setSettingsModal } show={ show } /> )
         :
         typeModa === 'sorts' && 
-          ( <SortModal setShowModal={ setSettingsModal } show={ show } /> )
+          ( <SortModal setShowModal={ setSettingsModal } show={ show } sorts={ sorts } /> )
       }
     </div> 
   )

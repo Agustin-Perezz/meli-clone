@@ -5,8 +5,8 @@ export const AppRoutes = () => {
   return (
     <BrowserRouter basename="/meli-clone">
       <Routes>
-        <Route path="/" element={ <ProductsPage /> } />
-        <Route path="/:id_item" element={ <ProductPage /> } />
+        <Route path="/items" element={ <ProductsPage /> } />
+        <Route path="/item/:id_item" element={ <ProductPage /> } />
         
         <Route path="*" element={ <Navigate replace to="/" /> }/> 
       </Routes>

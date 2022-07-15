@@ -1,13 +1,13 @@
 import React, { FormEvent, useContext } from 'react';
+import { ProductsContext } from '../../context/products-context';
 import { useForm } from '../../hooks';
-import { SearchIcon, MenuIcon, LocationMarkerIcon, ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/outline';
-import { ProductsContext } from '../../context/products';
- 
-import meli_logo_small from '../../assets/meli_logo_small.png';
-import meli_logo_large from '../../assets/meli_logo.png';
-import shopping_cart from '../../assets/shopping-cart.png';
-import location from '../../assets/location-icon.svg';
-import disney from '../../assets/disney_publi.png';
+
+import { SearchIcon, MenuIcon, ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/outline';
+import meli_logo_small from '../../assets/images/meli_logo_small.png';
+import meli_logo_large from '../../assets/images/meli_logo.png';
+import shopping_cart from '../../assets/images/shopping-cart.png';
+import disney from '../../assets/images/disney_publi.png';
+import location from '../../assets/svg/location-icon.svg';
 
 export const NavBar : React.FC = () => {
 

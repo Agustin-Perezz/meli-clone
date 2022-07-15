@@ -8,3 +8,16 @@
     background-color: $background;
   }
 }
+
+.nothing__search { 
+  @include flex-box();
+  min-height: 80vh;
+  &__img { 
+    height: 170px;
+    opacity: 0.3;
+  }
+  &__text { 
+    padding-left: 20px;
+    color: $grey;
+  }
+}

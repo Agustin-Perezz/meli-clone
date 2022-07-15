@@ -1,21 +1,23 @@
-
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import { ResultProduct } from '../../../models/resultProducts';
 
-import full_icon from '../../../assets/full-icon.svg';
-import heart from '../../../assets/heart.png';
+import full_icon from '../../../assets/svg/full-icon.svg';
+import heart from '../../../assets/images/heart.png';
 
 interface Props {
   product: ResultProduct;
 }
 
 export const Product : React.FC<Props> = ({ product }) => {
+
+  const navigate = useNavigate();
+  
   return ( 
-    <div className='box'> 
+    <div className='box' onClick={() => navigate(`/item/:${ product.id }`)}> 
       <div className="box__image--container">
         <button className='box__favorite'>
-          <img src={ heart } className='box__favorite--icon'/> 
+          <img src={ heart } className='box__favorite--icon' alt='heart'/> 
         </button>
         <img src={ product.picture } alt="" />
       </div> 

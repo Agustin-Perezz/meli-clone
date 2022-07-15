@@ -1,0 +1,42 @@
+.loading { 
+  @include flex-box( center, center, wrap);
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.loader-animation {
+  @include flex-box();
+  &-text {
+    font-family: 'Proxima Nova Variant', sans-serif;
+    font-weight: 500;
+    font-size: 15px;    
+    letter-spacing: 1px;
+    color: $grey;
+    padding-right: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+.loader-animation > img {
+  width: 40px;  
+  height: 40px;
+  margin: 0px 5px 10px 5px;
+  border-radius: 50%;
+  animation: loader-animation .6s infinite alternate;
+}
+
+@keyframes loader-animation {
+  to {
+    transform: translate3d(0, -.5rem, 0);
+  }
+}
+
+.loader-animation > img:nth-child(2) {
+  animation-delay: .2s;
+}
+.loader-animation > img:nth-child(3) {
+  animation-delay: .4s;
+}
