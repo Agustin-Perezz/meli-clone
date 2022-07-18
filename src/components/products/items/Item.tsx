@@ -9,7 +9,7 @@ interface Props {
   product: ResultProduct;
 }
 
-export const Product : React.FC<Props> = ({ product }) => {
+export const Item : React.FC<Props> = ({ product }) => {
 
   const navigate = useNavigate();
   

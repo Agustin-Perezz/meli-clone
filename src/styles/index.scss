@@ -9,9 +9,9 @@
 @import './components/navbar/NavBar';
 
 @import 
-  './components/products/items/Product',
+  './components/products/items/Item',
+  './components/products/items/ListItems',
   './components/products/items/ViewOptionsProducts',
-  './components/products/items/ListProducts',
   './components/products/items/NotFoundProduct';
 
 @import 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResultProduct, BasicInfo, AvailableSort } from '../../../models/resultProducts';
-import { Product } from './Product';
+import { Item } from './Item';
 import { ViewOptionsProducts } from './ViewOptionsProducts';
 import { ListFiltersActiveMobile } from '../filters/list-filters-active';
 
@@ -12,7 +12,7 @@ interface Props {
   sorts: AvailableSort[];
 }
 
-export const ListProducts : React.FC<Props> = ({ products, name, sorts }) => {
+export const ListItems : React.FC<Props> = ({ products, name, sorts }) => {
   return (
     <div className='container__products'> 
       <div className="products__header">
@@ -22,7 +22,7 @@ export const ListProducts : React.FC<Props> = ({ products, name, sorts }) => {
       </div>
       {
         products.map(( product, index ) => (
-          <Product product={ product } key={ index } />
+          <Item product={ product } key={ index } />
         ))
       }
       <div className="products__footer">

@@ -3,7 +3,7 @@ import { ProductsContext } from '../../context/products-context';
 import { ListFiltersMobile } from './filters/filters-mobile';
 import { ListFiltersDesktop } from './filters/filters-desktop';
 
-import { ListProducts, NotFoundProduct } from './items';
+import { ListItems, NotFoundProduct } from './items';
 import { LoadingComponent } from './LoadingComponent';
 
 import embalaje from '../../assets/images/packages.png';
@@ -25,7 +25,7 @@ export const Products : React.FC = () => {
         basic_information={ data.basic_info } 
         categories={ data.categories } 
       />
-      <ListProducts 
+      <ListItems 
         products={ data.result_products } 
         name={ data.basic_info } 
         sorts={ data.available_sorts }
