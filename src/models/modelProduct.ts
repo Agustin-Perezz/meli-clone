@@ -12,11 +12,19 @@ export interface modelProduct {
 export interface ListAttributes {
     previewAttribute: Attribute[];
     attributes:       Array<Attribute[]>;
+    images:           Images;
 }
 
 export interface Attribute {
   name:  string;
   value: string;
+}
+
+export interface Images {
+  mercado_credit_url: string;
+  credit:             string[];
+  debit:              string[];
+  efectivo:           string[];
 }
 
 export interface BasicInfo {

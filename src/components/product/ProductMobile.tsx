@@ -6,7 +6,7 @@ import { Description } from "./description"
 import { Attributes } from "./attributes"
 import { Header } from "./header"
 import { Trader } from "./trader"
-import { ModalDropdown } from "./modal-dropdown"
+import { PaymentsMethods } from "./payments-methods"
 
 export const ProductMobile = () => {
 
@@ -21,6 +21,7 @@ export const ProductMobile = () => {
       <Trader />
       <Attributes />
       <Description description={ dataProduct!.description }/>
+      <PaymentsMethods />
     </section>
   )
 }

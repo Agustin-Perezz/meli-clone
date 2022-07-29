@@ -1,0 +1,57 @@
+
+.payment { 
+  &__title, &__cuotes, &__credit, &__debit, &__efectivo {
+    padding: 0 16px;
+  }
+  &__container{ 
+    text-align: left;
+    &::before {  
+      content: "";
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: block;
+      width: 100vw;
+      height: 1px;
+      margin: 10px 0;
+    }
+  }
+  &__title { 
+    font-size: 20px;
+    color: $black_dark;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  &__cuotes { 
+    &__title { 
+      font-size: 16px;
+      color: $black;
+      display: block;
+    }
+    &__img { 
+      margin-top: 22px;
+    }
+  }
+
+  &__credit, &__debit, &__efectivo {  
+    &__header {  
+      &--title { 
+        display: block;
+        margin-top: 15px;
+        font-size: 16px;
+        color: $black_dark;
+        padding-bottom: 7px;
+      }
+      &--subtitle { 
+        font-size: 16px;
+        color: $grey;
+      }
+    }
+  }
+
+  &__images { 
+    @include flex-box( flex-start,  center, wrap );
+    margin-top: 12px;
+    &__icon { 
+      margin: 10px 24px 4px 0;
+    }
+  }
+}
