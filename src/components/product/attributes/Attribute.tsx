@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Attribute as AttributesProps } from '../../../models/modelProduct';
 

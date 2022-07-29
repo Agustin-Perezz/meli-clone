@@ -1,0 +1,436 @@
+{
+  "basic_info": {
+    "title": "Alcatel 1 16 Gb  Negro Metálico 1 Gb Ram",
+    "condition": "Nuevo",
+    "price": "$ 17.999",
+    "installaments": "$ 1.500",
+    "sold_quantity": 500,
+    "total_reviews": 5,
+    "rating_average": 4,
+    "free_shipping": true
+  },
+  "pictures": [
+    "http://http2.mlstatic.com/D_913104-MLA41487029341_042020-O.jpg",
+    "http://http2.mlstatic.com/D_934103-MLA41486926442_042020-O.jpg",
+    "http://http2.mlstatic.com/D_968795-MLA41487029342_042020-O.jpg",
+    "http://http2.mlstatic.com/D_964976-MLA41487029343_042020-O.jpg"
+  ],
+  "seller": {
+    "nickname": "ITECOM DIGITAL",
+    "location": {
+      "city": "Capital Federal",
+      "province": "Capital Federal"
+    },
+    "reputation": "platinum",
+    "transactions": {
+      "canceled": 6331,
+      "completed": 87113,
+      "period": "historic",
+      "ratings": {
+        "negative": 0.03,
+        "neutral": 0.03,
+        "positive": 0.94
+      },
+      "total": 93444
+    },
+    "transactions_total": " 93.444"
+  },
+  "list_attributes": {
+    "previewAttribute": [
+      {
+        "name": "Brillo máximo de la pantalla",
+        "value": "625 cd/m²"
+      },
+      {
+        "name": "Capacidad de la batería",
+        "value": "2000 mAh"
+      },
+      {
+        "name": "Tipo de batería",
+        "value": "Ion de litio"
+      },
+      {
+        "name": "Marca",
+        "value": "Alcatel"
+      },
+      {
+        "name": "Compañía telefónica",
+        "value": "Liberado"
+      }
+    ],
+    "attributes": [
+      [
+        {
+          "name": "Color",
+          "value": "Negro metálico"
+        },
+        {
+          "name": "Tamaños de tarjeta SIM compatibles",
+          "value": "Nano-SIM"
+        },
+        {
+          "name": "Modelos de CPU",
+          "value": "4x1.3 GHz Cortex-A53"
+        },
+        {
+          "name": "Profundidad",
+          "value": "9.8 mm"
+        }
+      ],
+      [
+        {
+          "name": "Zoom digital",
+          "value": "10x"
+        },
+        {
+          "name": "Píxeles por pulgada de la pantalla",
+          "value": "214 ppi"
+        },
+        {
+          "name": "Resolución de la pantalla",
+          "value": "480 px x 960 px"
+        },
+        {
+          "name": "Tamaño de la pantalla",
+          "value": "5 \""
+        }
+      ],
+      [
+        {
+          "name": "Tecnología de la pantalla",
+          "value": "IPS"
+        },
+        {
+          "name": "Cantidad de cámaras frontales",
+          "value": "1"
+        },
+        {
+          "name": "Apertura del diafragma de la cámara frontal",
+          "value": "f 2.2"
+        },
+        {
+          "name": "Resolución de video de la cámara frontal",
+          "value": "1280 px x 720 px"
+        }
+      ],
+      [
+        {
+          "name": "Modelo de GPU",
+          "value": "PowerVR GE8100"
+        },
+        {
+          "name": "Código universal de producto",
+          "value": "7796941500992,7796941500626"
+        },
+        {
+          "name": "Altura",
+          "value": "137.6 mm"
+        },
+        {
+          "name": "Memoria interna",
+          "value": "16 GB"
+        }
+      ],
+      [
+        {
+          "name": "Es Dual SIM",
+          "value": "No"
+        },
+        {
+          "name": "Es resistente a salpicaduras",
+          "value": "No"
+        },
+        {
+          "name": "Es a prueba de agua",
+          "value": "No"
+        },
+        {
+          "name": "Es resistente al agua",
+          "value": "No"
+        }
+      ],
+      [
+        {
+          "name": "Condición del ítem",
+          "value": "Nuevo"
+        },
+        {
+          "name": "Línea",
+          "value": "ALCATEL"
+        },
+        {
+          "name": "Color principal",
+          "value": "Negro"
+        },
+        {
+          "name": "Resolución de la cámara frontal principal",
+          "value": "5 Mpx"
+        }
+      ],
+      [
+        {
+          "name": "Resolución de la cámara trasera principal",
+          "value": "8 Mpx"
+        },
+        {
+          "name": "Capacidad máxima de la tarjeta de memoria",
+          "value": "32 GB"
+        },
+        {
+          "name": "Tipos de tarjeta de memoria",
+          "value": "Micro-SD"
+        },
+        {
+          "name": "Red",
+          "value": "4G/LTE"
+        }
+      ],
+      [
+        {
+          "name": "Modelo",
+          "value": "1"
+        },
+        {
+          "name": "Edición del sistema operativo",
+          "value": "Go Edition"
+        },
+        {
+          "name": "Nombre del sistema operativo",
+          "value": "Android"
+        },
+        {
+          "name": "Versión original del sistema operativo",
+          "value": "8.1 Oreo"
+        }
+      ],
+      [
+        {
+          "name": "Cantidad de núcleos del procesador",
+          "value": "4"
+        },
+        {
+          "name": "Modelo del procesador",
+          "value": "MediaTek MT6739"
+        },
+        {
+          "name": "Velocidad del procesador",
+          "value": "1.3 GHz"
+        },
+        {
+          "name": "Memoria RAM",
+          "value": "1 GB"
+        }
+      ],
+      [
+        {
+          "name": "Cantidad de cámaras traseras",
+          "value": "1"
+        },
+        {
+          "name": "Apertura del diafragma de la cámara trasera",
+          "value": "f 2.0"
+        },
+        {
+          "name": "Resolución de video de la cámara trasera",
+          "value": "1920 px x 1080 px"
+        },
+        {
+          "name": "Año de lanzamiento",
+          "value": "2018"
+        }
+      ],
+      [
+        {
+          "name": "SKU",
+          "value": "7796941501289"
+        },
+        {
+          "name": "Cantidad de ranuras para tarjeta SIM",
+          "value": "1"
+        },
+        {
+          "name": "Duración de la batería en espera",
+          "value": "200 h"
+        },
+        {
+          "name": "Tiempo de conversación",
+          "value": "10 h"
+        }
+      ],
+      [
+        {
+          "name": "Peso",
+          "value": "134 g"
+        },
+        {
+          "name": "Ancho",
+          "value": "65.7 mm"
+        },
+        {
+          "name": "Con acelerómetro",
+          "value": "Sí"
+        },
+        {
+          "name": "Con barómetro",
+          "value": "Sí"
+        }
+      ],
+      [
+        {
+          "name": "Con Bluetooth",
+          "value": "Sí"
+        },
+        {
+          "name": "Con cámara",
+          "value": "Sí"
+        },
+        {
+          "name": "Con eSIM",
+          "value": "No"
+        },
+        {
+          "name": "Con reconocimiento facial",
+          "value": "No"
+        }
+      ],
+      [
+        {
+          "name": "Con lector de huella digital",
+          "value": "No"
+        },
+        {
+          "name": "Con flash en la cámara frontal",
+          "value": "No"
+        },
+        {
+          "name": "Con GPS",
+          "value": "Sí"
+        },
+        {
+          "name": "Con giroscopio",
+          "value": "No"
+        }
+      ],
+      [
+        {
+          "name": "Con IMEI",
+          "value": "Sí"
+        },
+        {
+          "name": "Con ranura para tarjeta de memoria",
+          "value": "Sí"
+        },
+        {
+          "name": "Con mini HDMI",
+          "value": "No"
+        },
+        {
+          "name": "Con NFC",
+          "value": "Sí"
+        }
+      ],
+      [
+        {
+          "name": "Con teclado QWERTY físico",
+          "value": "No"
+        },
+        {
+          "name": "Con sensor de proximidad",
+          "value": "Sí"
+        },
+        {
+          "name": "Con radio",
+          "value": "Sí"
+        },
+        {
+          "name": "Con batería removible",
+          "value": "Sí"
+        }
+      ],
+      [
+        {
+          "name": "Con pantalla táctil",
+          "value": "Sí"
+        },
+        {
+          "name": "Con sintonizador de TV",
+          "value": "No"
+        },
+        {
+          "name": "Con conector USB",
+          "value": "Sí"
+        },
+        {
+          "name": "Con Wi-Fi",
+          "value": "Sí"
+        }
+      ]
+    ]
+  },
+  "description": [
+    "Más para ver\nCon su pantalla IPS de 5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.",
+    "\n\nBatería para todo el día\nSu batería de 2000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.",
+    "\n\nMomentos únicos, capturas reales\nCapturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.",
+    "\n\n Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.",
+    "."
+  ],
+  "questions": [],
+  "reviews": {
+    "rating_average": 4,
+    "total_reviews": 5,
+    "rating_levels": {
+      "one_star": 7,
+      "two_star": 3,
+      "three_star": 11,
+      "four_star": 27,
+      "five_star": 39
+    },
+    "group_reviews": [
+      {
+        "title": "Básico para una persona mayor o un chico",
+        "content": "El celu es básico se lo compré a mi papá que usa whatsapp y llama por teléfono. Obviamente por el precio no es alta gama. Pero para alguien que le da un uso sencillo está mas que bien tiene buena calidad de video y sonido. \n. \nSi es un adolescente o un adulto que está todo el día pegada y usa otras aplicaciones no es recomendado. Pero para uso básico ver videos en youtube o escuchar música vale la pena.",
+        "date_created": "04 Mar 2021",
+        "rate": 3,
+        "likes": 21,
+        "dislikes": 1,
+        "type": "postive"
+      },
+      {
+        "title": "Bstante bien",
+        "content": "Precio / calidad, está muy bien. Se lo compre a mi vieja que usa lo básico y algún que otro jueguito (liviano). \nResponde bastante bien, la capacidad de 16g de almacenamiento que tiene es muy útil para la utilidad que le da. La camara media media, pero bueno, por el precio tampoco nos podemos poner en exigentes, anda y saca fotos (de día zafa igual. ). \nEn síntesis, es un teléfoni no para exigentes, cumple con lo básico y algún juego liviano. \nAh! es muy lindo estéticamente y el tactil es de vidrio a diferencia de los que están en ese rango de precios.",
+        "date_created": "17 Apr 2021",
+        "rate": 5,
+        "likes": 3,
+        "dislikes": 1,
+        "type": "postive"
+      },
+      {
+        "title": "no es malo",
+        "content": "El producto no es malo, teniendo en cuenta que estamos ante la gama mas baja de teléfonos móviles. Un aspecto a mejorar en lo inmediato, es la pantalla; tiene uno que estar en una posición precisa para poder ver bien lo que nos enseña la pantalla, ya que esta tiene muy poco angulo de visión nítida. Por ultimo, el precio: si nos regimos por la equivalencia peso dólar, esta mas caro que antes, una suba injustificada.",
+        "date_created": "24 Mar 2021",
+        "rate": 3,
+        "likes": 3,
+        "dislikes": 0,
+        "type": "postive"
+      },
+      {
+        "title": "Básico, lento, acorde a precio calidad",
+        "content": "El celular es super básico, lo compré para mi nene ya que le sirve para ver videos en youtube etc pero para un adulto honestamente la calidad es muy básica poca nitidez, muy lento, el precio que tiene es acorde a lo que es el celular.",
+        "date_created": "04 May 2022",
+        "rate": 2,
+        "likes": 0,
+        "dislikes": 0,
+        "type": "negative"
+      },
+      {
+        "title": "Malo... No termine de pagarlo y ya se rompio",
+        "content": "Sumamente de mala calidad se partió la pantalla sola. Solo me puse el celular en el bolsillo cuando lo saco estaba roto. Teniendo glass protector y funda protectora el glass protector quedó intacto no entiendo cómo se rompio.",
+        "date_created": "18 Oct 2021",
+        "rate": 1,
+        "likes": 0,
+        "dislikes": 0,
+        "type": "negative"
+      }
+    ]
+  }
+}

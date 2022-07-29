@@ -3,10 +3,15 @@ export interface modelProduct {
   basic_info:  BasicInfo;
   pictures:    string[];
   seller:      Seller;
-  attributes:  Array<Attribute[]>;
+  list_attributes: ListAttributes;
   description: string[];
   questions:   any[];
   reviews:     Reviews;
+}
+
+export interface ListAttributes {
+    previewAttribute: Attribute[];
+    attributes:       Array<Attribute[]>;
 }
 
 export interface Attribute {

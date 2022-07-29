@@ -6,12 +6,10 @@ interface Props {
 }
 
 export const ListAttributes : React.FC<Props> = ({ attributes }) => {
-  const newAttributes = attributes;
-  newAttributes.shift()
   return (
     <>
       {
-        newAttributes.map(( groupAttributes, index ) => (
+        attributes.map(( groupAttributes, index ) => (
           <div className='attributes__group' key={ index }>
             {
               groupAttributes.map(( attribute_children, index ) => ( 
