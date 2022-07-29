@@ -1,0 +1,87 @@
+.information { 
+  padding: 0 16px;
+  margin-top: 15px;
+  &__price { 
+    @include flex-box( center, flex-start );
+    flex-direction: column;
+    &__value, &__cuotes {     
+      color: $black_dark;
+      font-family: 'Proxima Nova Light'; 
+    }
+    &__value { 
+      font-size: 32px;
+      font-weight: 300;
+    }
+    &__cuotes { 
+      margin-top: -3px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &__payment {
+      color: $sort_color;
+      font-size: 14px;
+      padding-top: 3px;
+    }
+  }
+}
+
+.shipping { 
+  @include flex-box( flex-start, flex-start );
+  margin-top: 20px;
+  margin-bottom: 17px;
+  &__group { 
+    @include flex-box( center, flex-start );
+    flex-direction: column;
+  }
+  &__icon &__text {  
+    color: $black_dark;
+  }
+  &__icon { 
+    margin-right: 8px;
+  }
+  &__location {  
+    height: 22px;
+    width: 17px;
+  }
+  &__text  { 
+    font-size: 16px;
+    font-family: 'Proxima Nova Light'; 
+  }
+  &__time { 
+    font-size: 14px;
+    color: rgba(0,0,0,.55);
+    margin: 5px 0;
+  }
+  &__calculate { 
+    @include flex-box();
+    &__text {  
+      font-size: 14px;
+      color: $sort_color;
+      padding-left: 3px;
+    }
+  }
+}
+
+.seller { 
+  @include flex-box( center, flex-start );
+  flex-direction: column;
+  &__label, &__lider { 
+    font-size: 14px;
+    color: $black_dark;
+  }
+  label { 
+    color: $sort_color;
+    text-transform: uppercase;
+  }
+  &__lider { 
+    margin: 5px 0;
+  }
+  &__factura { 
+    color: rgba(0,0,0,.55);
+    font-size: 12px;
+  }
+}
+
+.free { 
+  color: $green;
+}

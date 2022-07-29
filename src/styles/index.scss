@@ -8,6 +8,8 @@
 // Components
 @import './components/navbar/NavBar';
 
+// <----------- PRODUCTS STYLES ------------>
+
 @import 
   './components/products/items/Item',
   './components/products/items/ListItems',
@@ -35,3 +37,29 @@
   './components/products/filters/filters-desktop/FilterDesktop';
   
 @import './components/products/categories/ListCategories';
+
+// <---------- PRODUCTS STYLES -------------->
+
+
+// <----------- PRODUCT STYLES ----------->
+
+@import './components/product/Product';
+
+@import './components/product/boundle-images/BoundleImagesMobile';
+
+@import './components/product/general-information/GeneralInformation',
+        './components/product/general-information/ButtonsInformation';
+
+@import './components/product/header/Header',
+        './components/product/header/Stars';
+
+@import './components/product/trader/Trader';
+
+@import './components/product/description/Description';
+
+@import './components/product/attributes/Attributes',
+        './components/product/attributes/GroupAttributes';
+
+@import './components/product/modal-dropdown/ModalDropdown';
+
+

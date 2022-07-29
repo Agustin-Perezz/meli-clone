@@ -14,7 +14,7 @@ export const Item : React.FC<Props> = ({ product }) => {
   const navigate = useNavigate();
   
   return ( 
-    <div className='box' onClick={() => navigate(`/item/:${ product.id }`)}> 
+    <div className='box' onClick={() => navigate(`/item/${ product.id }`)}> 
       <div className="box__image--container">
         <button className='box__favorite'>
           <img src={ heart } className='box__favorite--icon' alt='heart'/> 

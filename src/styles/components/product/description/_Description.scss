@@ -1,0 +1,18 @@
+
+.description { 
+  &__container { 
+    padding: 0 16px;
+    text-align: left;
+  }
+  &__title { 
+    font-size: 20px;
+    color: $black_dark;
+    margin-bottom: 24px;
+    font-family: 'Proxima Nova Light';
+  }
+  &__paragraph { 
+    font-size: 16px;
+    color: $black_five;
+    padding-bottom: 25px;
+  }
+}

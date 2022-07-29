@@ -1,0 +1,32 @@
+
+.dropdown {
+  &__container { 
+    width: 100%;
+  }
+  &__header {
+    @include flex-box( flex-start, center );
+    &__title { 
+      font-size: 14px;
+      color: $sort_color;
+      padding-right: 8px;
+    }
+    &__icon { 
+      stroke: $sort_color;
+      transform: rotate(90deg);
+    }
+    &--hidden { 
+      display: none;
+    }
+  }
+
+  &__content { 
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    width: 100%;
+    &--show { 
+      min-height: 100%;
+      max-height: max-content;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.buttons { 
+  @include flex-box( center, center );
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 16px;
+
+  &__button { 
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+    height: 48px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    &--buy { 
+      background-color: $sort_color;
+      color: $white;
+    }
+    &--cart { 
+      background-color: rgba(65,137,230,.15);
+      color: $sort_color;
+    }
+  }
+}
+
+.extra {
+  margin: 20px 0 8px 0;
+  padding: 0 16px;
+  &__group { 
+    @include flex-box( flex-start, flex-start );
+    margin-bottom: 20px;
+    &__block { 
+      &--text, &--paragraph { font-size: 14px; }
+      &--text { 
+        color: $sort_color;
+        display: block;
+      }
+      &--paragraph { 
+        font-family: 'Proxima Nova Light';
+        color: $black_three;
+      }
+    }
+    &__icon { 
+      height: 16px;
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+  }
+  &__variant { 
+    display: inline;
+  }
+}
+
+.share { 
+  font-family: 'Proxima Nova Light';
+  font-weight: 400;
+  @include flex-box( space-evenly, center, wrap  );
+  padding-top: 15px;
+  &::after{  
+    content: '';
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: block;
+    width: 100vw;
+    height: 1px;
+    margin: 40px 0;
+  }
+  &__block { 
+    @include flex-box();
+
+  }
+  &__text { 
+    font-size: 14px;
+    color: $sort_color;
+    margin-left: 8px;
+  }
+}

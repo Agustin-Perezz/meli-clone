@@ -1,0 +1,24 @@
+
+.header { 
+  padding: 0 16px;
+  &__icon { 
+    stroke: none;
+    height: 15px;
+    fill: $grey;
+  }
+
+  &__top { 
+    @include flex-box( space-between, center );
+    margin-bottom: 8px;
+    &__condition, &__mount, &__separator {  
+      font-size: 12px;
+      padding-right: 3px;
+      color: rgba(0,0,0,.55);
+      font-weight: 400;
+    }
+  }
+  &__title { 
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+  }
+}

@@ -1,0 +1,10 @@
+
+.product__mobile { 
+  @include flex-box( center, none );
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  padding: 16px 0;
+  margin-bottom: 100px;
+  background-color: $white;
+}

@@ -1,0 +1,29 @@
+
+.attributes { 
+  &__container { 
+    @include flex-box( center, center );
+    flex-direction: column;
+    padding: 0 16px;
+    &:after { 
+      content: "";
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: block;
+      width: 100vw;
+      height: 1px;
+      margin: 40px 0;
+    }
+  }
+  &__title { 
+    font-size: 20px;
+    color: $black_dark;
+    font-family: 'Proxima Nova Light', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+    &--preview { 
+      color: $black_dark;
+      font-size: 16px;
+      margin-right: auto;
+      padding-bottom: 15px;
+    }
+  }
+}
