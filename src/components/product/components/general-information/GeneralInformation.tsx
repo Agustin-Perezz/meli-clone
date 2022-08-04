@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
-import { ProductContext } from '../../../context/product-context';
-import location_two from '../../../assets/svg/location-icon-two.svg';
-import TruckIcon from '../../../assets/Icons/TruckIcon';
+import { ProductContext } from '../../../../context/product-context';
+
+import location_two from '../../../../assets/svg/location-icon-two.svg';
+import TruckIcon from '../../../../assets/Icons/TruckIcon';
+import arrow_down from '../../../../assets/svg/arrow_down.svg';
+
 
 export const GeneralInformation : React.FC = () => {
 
@@ -31,6 +34,14 @@ export const GeneralInformation : React.FC = () => {
         <span className="seller__label"> Vendido por <label> { seller.nickname } </label> </span>
         <span className="seller__lider">{`Mercadolider | ${ seller.transactions_total } ventas`}</span>
         <span className="seller__factura"> Hace factura A </span>
+      </div>
+      <div className="stock">
+        <span className="stock__text"> Stock disponible </span>
+        <div className="stock__box">
+          <span className='stock__box--title'> Cantidad: 1 </span>
+          <span className='stock__box--value'> ({ basic_info.sold_quantity }) disponibles </span>
+          <img className='stock__box--icon' src={ arrow_down } alt="arrow_down" />
+        </div>
       </div>
     </div>  
 )}

@@ -1,0 +1,29 @@
+
+.question { 
+  &__container {
+    margin-top: 16px;
+  }
+  &__value { 
+    font-size: 16px;
+    color: $black_dark;
+  }
+  &__answer { 
+    font-family: 'Proxima Nova Light';
+    @include flex-box( flex-start, flex-start );
+    margin-left: 12px;
+    margin-top: 8px;
+    width: auto;
+    &__text { 
+      font-size: 16px;
+      color: rgba(0,0,0,.55);
+    }
+    &__icon { 
+      height: 12px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.questions__container { 
+  padding: 0 16px;
+}

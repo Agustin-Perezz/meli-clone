@@ -1,4 +1,4 @@
-import { BasicInfo } from '../../../models/modelProduct';
+import { BasicInfo } from '../../../../models/modelProduct';
 import { StarIcon } from '@heroicons/react/outline';
 import { Stars } from './Stars';
 

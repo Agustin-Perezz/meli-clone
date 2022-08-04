@@ -1,0 +1,75 @@
+
+.list__opinions { 
+  padding: 20px 16px;
+}
+
+.star__mobile {
+  width: 16.8;
+  height: 16;
+  margin-right: 8.2px;
+}
+
+.opinion { 
+  margin-bottom: 32px;
+  &__header { 
+    @include flex-box( space-between, flex-end );
+    margin-bottom: 4px;
+    &__title { 
+      font-size: 16px;
+      color: $black_dark;
+      line-height: 1;
+      font-weight: 600;
+      &::first-letter { text-transform: uppercase; }
+    }
+    &__button { 
+      @include flex-box();
+      flex-direction: column;
+      padding: 10px 0 10px 16px;
+      gap: 3px;
+      &--circle { 
+        border-radius: 50%;
+        height: 4px;
+        width: 4px;
+        background-color: #CCCCCC;
+      }
+    }
+  }
+  &__paragraph { 
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    line-height: 1.35;
+  }
+  &__date {
+    font-family: 'Proxima Nova Light', sans-serif;
+    padding: 0 8px;
+    font-size: 16px;
+    color: $grey;
+  }
+
+  &__block { 
+    @include flex-box( flex-start, center );
+    margin-top: 16px;
+    &--likes, &--dislikes { 
+      @include flex-box();
+      margin-right: 25px;
+      padding: 0 24px;
+      &--txt { 
+        color: $sort_color;
+      }
+    }
+    &--icon { 
+      fill: $sort_color;
+      stroke: #3483fa;
+      margin-right: 6px;
+    }
+  }
+}
+
+.empity-message { 
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: $grey;
+  margin: 30px auto 0 auto;
+}

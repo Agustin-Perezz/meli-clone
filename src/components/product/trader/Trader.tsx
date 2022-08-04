@@ -5,6 +5,7 @@ import location_mobile from '../../../assets/svg/location-mobile.svg';
 import message_check from '../../../assets/svg/message-check.svg';
 import clock from '../../../assets/svg/clock.svg';
 import medal from '../../../assets/svg/medal.svg';
+import { BlockDropdown } from '../components/modal-dropdown/BlockDropdown';
 
 export const Trader : React.FC = () => {
 
@@ -49,5 +50,6 @@ export const Trader : React.FC = () => {
           <span className="trader__information__block--value"> Despacha sus productos a tiempo </span>
         </div>
       </div>
+      <BlockDropdown content_title='Ver más datos de este vendedor'/>
     </div>  
 )}

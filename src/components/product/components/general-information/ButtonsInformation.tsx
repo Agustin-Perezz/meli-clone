@@ -1,8 +1,8 @@
-import undo from '../../../assets/images/undo.png';
-import shield from '../../../assets/images/proteger.png';
-import trophy from '../../../assets/images/trophy.png';
-import hearth from '../../../assets/svg/hearth.svg';
-import share from '../../../assets/svg/share.svg';
+import undo from '../../../../assets/images/undo.png';
+import shield from '../../../../assets/images/proteger.png';
+import trophy from '../../../../assets/images/trophy.png';
+import hearth from '../../../../assets/svg/hearth.svg';
+import share from '../../../../assets/svg/share.svg';
 
 export const ButtonsInformation = () => {
   return (

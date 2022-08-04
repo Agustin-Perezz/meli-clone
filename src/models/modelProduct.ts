@@ -5,7 +5,7 @@ export interface modelProduct {
   seller:      Seller;
   list_attributes: ListAttributes;
   description: string[];
-  questions:   any[];
+  list_questions: ListQuestions;
   reviews:     Reviews;
 }
 
@@ -27,6 +27,16 @@ export interface Images {
   efectivo:           string[];
 }
 
+export interface ListQuestions {
+  previewQuestion: Question;
+  questions:       Question[];
+}
+
+export interface Question {
+  question: string;
+  answer:   string;
+}
+
 export interface BasicInfo {
   title:          string;
   condition:      string;
@@ -39,28 +49,31 @@ export interface BasicInfo {
 }
 
 export interface Reviews {
-  rating_average: number;
-  total_reviews:  number;
-  rating_levels:  RatingLevels;
-  group_reviews:  GroupReview[];
+    rating_average: number;
+    total_reviews:  number;
+    rating_levels:  RatingLevel[];
+    list_reviews:   ListReviews;
 }
 
-export interface GroupReview {
-  title:        string;
-  content:      string;
-  date_created: string;
-  rate:         number;
-  likes:        number;
-  dislikes:     number;
-  type:         string;
+export interface ListReviews {
+    all_reviews:      Review[];
+    positive_reviews: Review[];
+    negative_reviews: Review[];
 }
 
-export interface RatingLevels {
-  one_star:   number;
-  two_star:   number;
-  three_star: number;
-  four_star:  number;
-  five_star:  number;
+export interface Review {
+    title:        string;
+    content:      string;
+    date_created: string;
+    rate:         number;
+    likes:        number;
+    dislikes:     number;
+    porcentage:   number;
+}
+
+export interface RatingLevel {
+    value:            number;
+    porcentage_width: string;
 }
 
 export interface Seller {

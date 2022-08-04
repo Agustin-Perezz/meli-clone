@@ -1,21 +1,20 @@
-
 import React from 'react';
 
-import arrow_down from '../../../assets/svg/arrow_down.svg';
+import arrow_down from '../../../../assets/svg/arrow_down.svg';
 
 interface Props { 
   children: JSX.Element | JSX.Element[];
   dropdown_title: string;
-  
+  additional_className?: string;
 }
-export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title }) => {
+export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, additional_className }) => {
 
   const [show, setShow] = React.useState( false );
 
   return (
-    <div className='dropdown__container'>  
+    <div className='dropdown__container' >  
       <div 
-        className={`dropdown__header ${ show && 'dropdown__header--hidden' }`} 
+        className={`dropdown__header ${ additional_className } ${ show && 'dropdown__header--hidden' }`} 
         onClick={() => setShow( !show )} 
       >
         <div className='dropdown__header__title'> { dropdown_title } </div>
@@ -24,5 +23,11 @@ export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title }) =>
       <div className={`dropdown__content ${ show && 'dropdown__content--show' }`}>
         { children }
       </div>
+      <button 
+        className={`dropdown__button ${ !show && 'dropdown__button--disabled'}`} 
+        onClick={() => setShow( !show )}
+        > 
+          Ocultar contenido 
+        </button>
     </div>  
 )}

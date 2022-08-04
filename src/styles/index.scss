@@ -60,8 +60,20 @@
 @import './components/product/attributes/Attributes',
         './components/product/attributes/GroupAttributes';
 
-@import './components/product/modal-dropdown/ModalDropdown';
+@import './components/product/modal-dropdown/ModalDropdown',
+        './components/product/modal-dropdown/BlockDropdown';
 
 @import './components/product/payment-methods/PaymentsMethods';
+
+@import './components/product/questions-and-answer/QuestionsAndAnswer',
+        './components/product/questions-and-answer/Question';
+
+@import './components/product/reviews/Reviews',
+        './components/product/reviews/stars/GroupReviews',
+        './components/product/reviews/stars/GroupStarsPorcentage',
+        './components/product/reviews/opinions/ListOpinions',
+        './components/product/reviews/opinions/Opinion',
+        './components/product/reviews/opinions/NavButtons';
+
 
 

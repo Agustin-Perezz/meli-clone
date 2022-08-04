@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { ProductContext } from '../../../context/product-context'
-import { ModalDropdown } from '../modal-dropdown';
+import { ProductContext } from '../../../../context/product-context'
+import { ModalDropdown } from '../../components/modal-dropdown';
 import { Attribute } from './Attribute';
 import { ListAttributes } from './ListAttributes';
 

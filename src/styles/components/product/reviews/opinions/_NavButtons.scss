@@ -1,0 +1,20 @@
+
+.opinions { 
+  &__nav { 
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid #E5E5E5;
+    &--button { 
+      width: 33.33%;
+      font-size: 14px;
+      color: $black_dark;
+      padding: 17px 16px;
+     
+    }
+  }
+}
+
+.button--active { 
+  color: $sort_color;
+  border-bottom: 2px solid $sort_color;
+}

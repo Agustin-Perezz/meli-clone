@@ -1,4 +1,4 @@
-import { Attribute as AttributeProps } from '../../../models/modelProduct';
+import { Attribute as AttributeProps } from '../../../../models/modelProduct';
 import { Attribute } from './Attribute';
 
 interface Props { 

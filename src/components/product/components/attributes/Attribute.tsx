@@ -1,5 +1,5 @@
 import React from 'react';
-import { Attribute as AttributesProps } from '../../../models/modelProduct';
+import { Attribute as AttributesProps } from '../../../../models/modelProduct';
 
 interface Props { 
   attribute: AttributesProps;

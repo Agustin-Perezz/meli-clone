@@ -2,6 +2,7 @@
 .dropdown {
   &__container { 
     width: 100%;
+    overflow-y:auto;
   }
   &__header {
     @include flex-box( flex-start, center );
@@ -17,6 +18,13 @@
     &--hidden { 
       display: none;
     }
+  }
+
+  &__button { 
+    font-size: 16px;
+    color: $sort_color;
+    padding: 20px 16px;
+    &--disabled { display: none; }
   }
 
   &__content { 

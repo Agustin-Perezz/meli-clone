@@ -1,16 +1,24 @@
-import { useContext } from "react"
+import React from 'react'
+
 import { ProductContext } from "../../context/product-context"
-import { ButtonsInformation, GeneralInformation } from "./general-information"
-import { BoundleImagesMobile } from "./boundle-images"
-import { Description } from "./description"
-import { Attributes } from "./attributes"
-import { Header } from "./header"
-import { Trader } from "./trader"
-import { PaymentsMethods } from "./payments-methods"
+
+import 
+  { 
+    Header,
+    BoundleImagesMobile,
+    ButtonsInformation, 
+    GeneralInformation,
+    Trader,
+    Attributes,
+    Description,
+    PaymentsMethods,
+    QuestionsAndAnswer,
+    Reviews
+  } from "./components/";
 
 export const ProductMobile = () => {
 
-  const { dataProduct } = useContext( ProductContext );
+  const { dataProduct } = React.useContext( ProductContext );
 
   return (
     <section className='product__mobile'>
@@ -22,6 +30,8 @@ export const ProductMobile = () => {
       <Attributes />
       <Description description={ dataProduct!.description }/>
       <PaymentsMethods />
+      <QuestionsAndAnswer />
+      <Reviews />
     </section>
   )
 }

@@ -8,6 +8,7 @@
 .sort__options { 
   width: 100%;
 }
+
 .sort__option { 
   @include flex-box( center, flex-start );
   flex-direction: column;

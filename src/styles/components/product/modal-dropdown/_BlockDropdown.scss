@@ -1,0 +1,16 @@
+
+.ui {
+  &__container { 
+    @include flex-box( space-between, center );
+    width: 90%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 6px;
+    margin: 30px auto 10px auto;
+    padding: 16px 20px 16px 16px;
+  }
+  &__text { 
+    font-size: 14px;
+    color: $sort_color;
+  }
+  // &__icon { margin-right: auto; }
+}

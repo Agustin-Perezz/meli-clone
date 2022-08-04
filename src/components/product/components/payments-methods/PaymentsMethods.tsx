@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import { ProductContext } from '../../../context/product-context';
+import { ProductContext } from '../../../../context/product-context';
+import { BlockDropdown } from '../modal-dropdown/BlockDropdown';
 
 export const PaymentsMethods = () => {
 
@@ -40,6 +41,7 @@ export const PaymentsMethods = () => {
           { images.efectivo.map(( url, index ) => ( <img src={ url } key={ index } className="payment__images__icon"/> ))}
         </div>
       </div>
+      <BlockDropdown content_title='Conocé otros medios de pago'/>
     </div>
   )
 }

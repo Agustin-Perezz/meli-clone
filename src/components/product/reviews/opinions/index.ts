@@ -1,0 +1,1 @@
+export { ListOpinions } from './ListOpinions';
