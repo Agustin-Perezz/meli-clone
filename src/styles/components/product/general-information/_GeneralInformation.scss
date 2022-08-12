@@ -83,6 +83,7 @@
 }
 
 .stock { 
+  max-width: 780px;
   margin-bottom: 10px;
   &__text { 
     display: block;
@@ -113,4 +114,12 @@
 
 .free { 
   color: $green;
+}
+
+@include media-up( md ) { 
+  .information { 
+    &__price { 
+      &__value { font-size: 36px; }
+    }
+  }
 }

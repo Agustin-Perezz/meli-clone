@@ -2,6 +2,7 @@
 .trader__container { 
   @include flex-box( center, flex-start );
   flex-direction: column;
+  max-width: 780px;
   &::after{  
     content: '';
     border-bottom: 1px solid rgba(0,0,0,.1);
@@ -16,6 +17,7 @@
     &__title, &__group, &__thermometer, &__information { 
       padding: 0 16px;
     }
+    &__text__desktop { display: none; }
     &__title { 
       font-size: 20px;
       margin-bottom: 24px;
@@ -99,4 +101,13 @@
       }
     }
    }
+}
+
+@include media-up( lg ) { 
+  .trader__container::after { display: none; }
+  .trader {
+    &__title { 
+      font-size: 18px !important;
+    }
+  }
 }

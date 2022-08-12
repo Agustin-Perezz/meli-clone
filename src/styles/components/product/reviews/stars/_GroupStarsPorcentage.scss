@@ -43,4 +43,13 @@
       }
     }
   }
+
+  @include media-up( md ) { 
+      &__container { 
+        display: block;
+        min-height: 100%;
+        max-height: max-content;
+        width: fit-content;
+    }
+  }
 }

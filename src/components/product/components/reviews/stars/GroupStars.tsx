@@ -1,5 +1,5 @@
 
-import Star from '../../../../assets/Icons/Star';
+import Star from '../../../../../assets/Icons/Star';
 
 interface Props { 
   porcentage: number;

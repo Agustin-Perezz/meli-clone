@@ -14,9 +14,8 @@ export const NavBar : React.FC = () => {
   const initialQuery = localStorage.getItem('queryProduct');
 
   const { onChange, queryProduct } = useForm({ queryProduct: initialQuery || '' });
-
   const { setQueryProduct } = useContext( ProductsContext );
-  
+
   const handleSubmit = ( e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
     setQueryProduct( queryProduct );

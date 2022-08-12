@@ -21,9 +21,12 @@
   }
 
   &__modal { 
+    @include flex-box( flex-start );
     &__box {
-      @include flex-box( center, space-around);
+      @include flex-box( center, space-around );
+      flex-direction: column;
       height: 100%;
+      &--b { @include flex-box() }
     }
     &__icon { 
       transform: rotate(90deg);
@@ -34,6 +37,7 @@
       }
     }
     &__opinions { 
+      margin-top: 8px;
       font-size: 14px;
       color: $grey;
     }
@@ -45,4 +49,23 @@
   height: 0px;
   overflow: hidden;
   height: max-content;
+}
+
+@include media-up( lg ) { 
+  .reviews { 
+    &__header { 
+      padding: 0;
+      &__title { 
+        font-size: 24px;
+      }
+    }
+    &__modal { 
+      @include flex-box( center, flex-end );
+      flex-direction: column;
+      margin-right: 56px;
+      &__icon { display: none; }
+      &__opinions { text-align: right; }
+    }
+  }
+
 }

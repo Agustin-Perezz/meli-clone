@@ -13,7 +13,7 @@ export const Attributes = () => {
     <div className='attributes__container'>
       <h2 className="attributes__title"> Características de { basic_info?.title } </h2>
       <h4 className='attributes__title--preview'> Características generales </h4>
-      <div className='attributes__group preview'>
+      <div className='attributes__group'>
         {
           list_attributes!.previewAttribute.map(( attribute, index ) => ( 
             <Attribute attribute={ attribute } key={ index } />

@@ -1,4 +1,4 @@
-import { ListReviews } from '../../../../models/modelProduct';
+import { ListReviews } from '../../../../../models/modelProduct';
 import { Opinion } from './Opinion';
 
 interface Props {

@@ -7,7 +7,7 @@ interface Props {
 
 export const ListAttributes : React.FC<Props> = ({ attributes }) => {
   return (
-    <>
+    <div className='attributes__list'>
       {
         attributes.map(( groupAttributes, index ) => (
           <div className='attributes__group' key={ index }>
@@ -19,6 +19,6 @@ export const ListAttributes : React.FC<Props> = ({ attributes }) => {
           </div>
         ))
       }
-    </>
+    </div>
   )
 }

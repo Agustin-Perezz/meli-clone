@@ -1,0 +1,32 @@
+
+.warranty { 
+  &::after { 
+    content: '';
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin: 32px 0;
+  }
+  &__title, &__subtitle, &__small {
+    padding: 0 16px; 
+    font-weight: 400;
+    line-height: 1.35;
+  }
+  &__title { 
+    font-size: 18px;
+    color: rgba(0,0,0,.8);
+    margin-bottom: 28px;
+  }
+  &__subtitle { 
+    display: block;
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+  &__small { 
+    font-size: 14px;
+    color: $grey;
+    display: block;
+  }
+}

@@ -3,6 +3,7 @@
   &__group { 
     margin-bottom: 24px;
     width: 100%;
+    max-width: 780px;
     border-radius: 5px;
     &__block {
       @include flex-box();
@@ -29,6 +30,17 @@
         width: 50%;
         padding: 12px;
       }
+    }
+  }
+
+  @include media-up( lg ) { 
+    &__group { 
+      width: 370px; 
+      &:nth-child(even) { padding-left: 30px;}
+    }
+    &__list { 
+      width: 100%;
+      @include flex-box( flex-start, center, wrap ); 
     }
   }
 }

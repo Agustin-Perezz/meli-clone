@@ -3,16 +3,38 @@
   &__container { 
     padding: 0 16px;
     text-align: left;
+    max-width: 780px;
   }
   &__title { 
     font-size: 20px;
     color: $black_dark;
     margin-bottom: 24px;
+    line-height: 1.25;
     font-family: 'Proxima Nova Light';
   }
   &__paragraph { 
     font-size: 16px;
     color: $black_five;
     padding-bottom: 25px;
+  }
+
+  @include media-up( lg ) { 
+    &__container { 
+      padding: 0; 
+      &::before { 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 40px 40px 40px 0px;
+      }
+    }
+    &__title { font-size: 24px; }
+    &__paragraph { 
+      font-family: 'Proxima Nova Light';
+      font-size: 20px;
+      color: #666666;
+    }
   }
 }

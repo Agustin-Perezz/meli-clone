@@ -21,9 +21,14 @@ export const Header : React.FC<Props> = ({ information_header : {
           <span className="header__top__separator"> | </span>
           <span className="header__top__mount"> { sold_quantity } vendidos </span>
         </div>
-        <Stars rating_average={ rating_average } total_reviews={ total_reviews }/>
+        <div className="header__stars">
+          <Stars rating_average={ rating_average } total_reviews={ total_reviews }/>
+        </div>
       </div>
       <h3 className="header__title"> { title } </h3>
+      <div className="header__stars--desktop">
+        <Stars rating_average={ rating_average } total_reviews={ total_reviews }/>
+      </div>
     </div>  
 )}
 

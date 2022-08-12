@@ -6,7 +6,6 @@
     height: 15px;
     fill: $grey;
   }
-
   &__top { 
     @include flex-box( space-between, center );
     margin-bottom: 8px;
@@ -20,5 +19,19 @@
   &__title { 
     font-size: 16px;
     color: rgba(0,0,0,.8);
+  }
+  &__stars--desktop { display: none; }
+
+  @include media-up( lg ) { 
+    &__top {
+      &__condition, &__mount, &__separator { 
+        font-size: 14px;
+      }
+    }
+    &__title { font-size: 22px; margin-bottom: 8px; }
+    &__stars { display: none; }
+    &__stars--desktop { 
+      display: inline-block;
+    }
   }
 }

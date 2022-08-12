@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { Review } from '../../../../models/modelProduct';
+import { Review } from '../../../../../models/modelProduct';
 import { GroupStars } from '../stars/GroupStars';
 
-import Like from '../../../../assets/Icons/Like';
-import Dislike from '../../../../assets/Icons/DisLike';
+import Like from '../../../../../assets/Icons/Like';
+import Dislike from '../../../../../assets/Icons/DisLike';
 
 interface Props {
   review: Review;

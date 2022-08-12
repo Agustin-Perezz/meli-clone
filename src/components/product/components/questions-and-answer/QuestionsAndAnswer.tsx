@@ -37,6 +37,7 @@ export const QuestionsAndAnswer = () => {
         dropdown_title={`Ver ${ list_questions!.questions.length } resultados más `}
         children={ <ListQuestions questions={ list_questions!.questions }/>} 
         additional_className='q-and-a__modal'
+        custom_fz="q-and-a__fontsize"
       />
       <div className="q-and-a__seller">
         <img src={ help } alt="" className="q-and-a__seller__icon" /> 

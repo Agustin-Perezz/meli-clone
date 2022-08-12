@@ -73,3 +73,22 @@
   color: $grey;
   margin: 30px auto 0 auto;
 }
+
+@include media-up( md ) { 
+  .opinion {  
+    &__block { 
+      &--likes, &--dislikes { 
+        padding: 0;
+        &--txt { 
+          font-family: 'Proxima Nova Light';
+          color: $black_dark;
+        }      
+      }
+      &--icon {
+        fill: $black_dark;
+        stroke-width: 1%;
+        stroke: $black_dark
+      } 
+    }    
+  }
+}

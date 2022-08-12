@@ -12,5 +12,17 @@
     font-size: 14px;
     color: $sort_color;
   }
-  // &__icon { margin-right: auto; }
+
+  @include media-up( md ) { 
+    &__container { 
+      border: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 24px;
+      margin-left: 16px;
+    }
+    &__icon { 
+      display: none;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { RatingLevel } from '../../../../models/modelProduct';
+import { RatingLevel } from '../../../../../models/modelProduct';
 
 interface Props { 
   rating_levels: RatingLevel[];

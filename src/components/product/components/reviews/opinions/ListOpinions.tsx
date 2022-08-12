@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ProductContext } from '../../../../context/product-context';
+import { ProductContext } from '../../../../../context/product-context';
 import { NavButtons } from './NavButtons';
 import { Opinions } from './Opinions';
 

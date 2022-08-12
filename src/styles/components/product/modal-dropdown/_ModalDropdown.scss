@@ -3,9 +3,11 @@
   &__container { 
     width: 100%;
     overflow-y:auto;
+    // padding-top: 16px;
   }
   &__header {
     @include flex-box( flex-start, center );
+    &:hover { cursor: pointer; }
     &__title { 
       font-size: 14px;
       color: $sort_color;
@@ -24,6 +26,7 @@
     font-size: 16px;
     color: $sort_color;
     padding: 20px 16px;
+    &:hover { cursor: pointer;}
     &--disabled { display: none; }
   }
 
@@ -36,5 +39,9 @@
       min-height: 100%;
       max-height: max-content;
     }
+  }
+
+  @include media-up( lg ) { 
+    &__container { padding-top: 0; }
   }
 }

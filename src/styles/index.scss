@@ -43,9 +43,11 @@
 
 // <----------- PRODUCT STYLES ----------->
 
-@import './components/product/Product';
+@import './components/product/Product',
+        './components/product/ProductDesktop';
 
-@import './components/product/boundle-images/BoundleImagesMobile';
+@import './components/product/boundle-images/BoundleImagesMobile',
+        './components/product/boundle-images/BoundleImagesDesktop';
 
 @import './components/product/general-information/GeneralInformation',
         './components/product/general-information/ButtonsInformation';
@@ -63,7 +65,8 @@
 @import './components/product/modal-dropdown/ModalDropdown',
         './components/product/modal-dropdown/BlockDropdown';
 
-@import './components/product/payment-methods/PaymentsMethods';
+@import './components/product/payment-methods/PaymentsMethods',
+        './components/product/payment-methods/PaymentsWarranty';
 
 @import './components/product/questions-and-answer/QuestionsAndAnswer',
         './components/product/questions-and-answer/Question';

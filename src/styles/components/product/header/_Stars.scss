@@ -15,4 +15,9 @@
     font-size: 12px;
     color: $sort_color;
   }
+
+  @include media-up( md ) { 
+    height: 16px;  
+    width: 16px;
+  }
 }

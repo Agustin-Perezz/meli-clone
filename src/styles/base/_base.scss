@@ -21,15 +21,6 @@
     url('../../assets/fonts/Proxima-Nova-Reg-It.otf') format('woff2'),
 }
 
-@font-face {
-  font-family: "navigation";
-  src: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.eot");
-  src: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.eot#iefix") format("embedded-opentype"),url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.woff2") format("woff2"),url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.woff") format("woff"),url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.ttf") format("truetype"),url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.1/mercadolibre/navigation.svg#navigation") format("svg");
-  font-weight: normal;
-  font-style: normal
-}
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -85,7 +76,7 @@ $white_two: #b8b8b8;
 $white_three: #fafafa;
 $grey: #999;
 $black: #000000;
-$black_dark: #000000e6;
+$black_dark: rgba(0, 0, 0, 0.9);;
 $background: #F5F5F5;
 $black_one: #363636;
 $black_two: #4d4b3c;

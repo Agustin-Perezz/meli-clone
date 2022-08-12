@@ -6,8 +6,9 @@ interface Props {
   children: JSX.Element | JSX.Element[];
   dropdown_title: string;
   additional_className?: string;
+  custom_fz?: string;
 }
-export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, additional_className }) => {
+export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, additional_className, custom_fz }) => {
 
   const [show, setShow] = React.useState( false );
 
@@ -17,7 +18,7 @@ export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, addi
         className={`dropdown__header ${ additional_className } ${ show && 'dropdown__header--hidden' }`} 
         onClick={() => setShow( !show )} 
       >
-        <div className='dropdown__header__title'> { dropdown_title } </div>
+        <div className={`dropdown__header__title ${ custom_fz }`}> { dropdown_title } </div>
         <img src={ arrow_down } className='dropdown__header__icon' alt='down_arrow' />
       </div>
       <div className={`dropdown__content ${ show && 'dropdown__content--show' }`}>

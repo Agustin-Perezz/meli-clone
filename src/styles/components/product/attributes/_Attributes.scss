@@ -1,7 +1,7 @@
 
 .attributes { 
   &__container { 
-    @include flex-box( center, center );
+    @include flex-box( center, flex-start );
     flex-direction: column;
     padding: 0 16px;
     &:after { 
@@ -13,7 +13,7 @@
       margin: 40px 0;
     }
   }
-  &__title { 
+  &__title {
     font-size: 20px;
     color: $black_dark;
     font-family: 'Proxima Nova Light', sans-serif;
@@ -24,6 +24,33 @@
       font-size: 16px;
       margin-right: auto;
       padding-bottom: 15px;
+    }
+    &__preview { width: 100%; }
+  }
+
+  @include media-up( lg ) { 
+    &__container { 
+      padding: 0;
+      &:after { content: none; }
+      &::before { 
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        content: "";
+        display: block;
+        width: 100%;
+        margin: 40px 40px 40px 0px;
+      }
+    }
+    &__title { 
+      display: none; 
+      &--preview { 
+        font-size: 24px;
+        margin-bottom: 32px;
+        line-height: 1.25;
+      }
+    }
+    &__preview { 
+      width: 100%;
+      margin-bottom: 24px;
     }
   }
 }

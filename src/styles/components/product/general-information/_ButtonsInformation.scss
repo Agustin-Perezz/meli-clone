@@ -23,6 +23,8 @@
   }
 }
 
+.buttons, .extra, .share { max-width: 780px; }
+
 .extra {
   margin: 20px 0 8px 0;
   padding: 0 16px;
@@ -73,4 +75,8 @@
     color: $sort_color;
     margin-left: 8px;
   }
+}
+
+@include media-up( lg ) { 
+  .share { display: none; }
 }
