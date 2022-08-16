@@ -11,6 +11,7 @@
   &__text { 
     font-size: 14px;
     color: $sort_color;
+    cursor: pointer;
   }
 
   @include media-up( md ) { 

@@ -8,16 +8,21 @@ import meli_logo_large from '../../assets/images/meli_logo.png';
 import shopping_cart from '../../assets/images/shopping-cart.png';
 import disney from '../../assets/images/disney_publi.png';
 import location from '../../assets/svg/location-icon.svg';
+import { useMatch, useNavigate } from 'react-router-dom';
 
 export const NavBar : React.FC = () => {
 
   const initialQuery = localStorage.getItem('queryProduct');
 
   const { onChange, queryProduct } = useForm({ queryProduct: initialQuery || '' });
-  const { setQueryProduct } = useContext( ProductsContext );
+  const { setQueryProduct  } = useContext( ProductsContext );
+
+  const navigate = useNavigate();
+  const match = useMatch('/item/:id_item');
 
   const handleSubmit = ( e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
+    if ( match !== null ) { navigate(`/items`) };
     setQueryProduct( queryProduct );
   };
   

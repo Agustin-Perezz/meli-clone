@@ -108,6 +108,13 @@
       height: 18px;
     }
   }
+  
+  &__empty {
+    display: block;
+    padding: 25px 0;
+    color: $grey;
+    margin-left: 16px;
+  }
 
   @include media-up( lg ) { 
     &__container { 
@@ -130,5 +137,6 @@
     }
     &__modal { margin: 30px 0 24px 0; padding: 0; }
     &__fontsize { font-size: 16px; }
+    &__empty { margin-left: 0; }
   }
 }

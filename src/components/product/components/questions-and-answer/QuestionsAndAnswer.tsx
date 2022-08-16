@@ -18,7 +18,7 @@ export const QuestionsAndAnswer = () => {
       <h4 className="q-and-a__title"> Preguntas y respuestas </h4>
       <div className="q-and-a__search">
         <h5 className="q-and-a__search__title"> Buscá lo que querés saber </h5> 
-        <form className='q-and-a__search__form'>
+        <form className='q-and-a__search__form' onSubmit={(e:React.FormEvent<HTMLFormElement>) => {e.preventDefault()}}>
           <input 
             type="text" 
             className="q-and-a__search__input" 
@@ -29,16 +29,22 @@ export const QuestionsAndAnswer = () => {
           </div>
         </form>
       </div>
-      <div className="q-and-a__preview">
-        <div className="q-and-a__preview__title"> Últimas realizadas </div>
-        <Question question_object={ list_questions!.previewQuestion }/>
-      </div>
-      <ModalDropdown 
-        dropdown_title={`Ver ${ list_questions!.questions.length } resultados más `}
-        children={ <ListQuestions questions={ list_questions!.questions }/>} 
-        additional_className='q-and-a__modal'
-        custom_fz="q-and-a__fontsize"
-      />
+      { 
+        list_questions?.questions.length ?  
+        <>
+          <div className="q-and-a__preview">
+            <div className="q-and-a__preview__title"> Últimas realizadas </div>
+            <Question question_object={ list_questions!.previewQuestion }/>
+          </div>
+          <ModalDropdown 
+            dropdown_title={`Ver ${ list_questions!.questions.length } resultados más `}
+            children={ <ListQuestions questions={ list_questions!.questions }/>} 
+            additional_className='q-and-a__modal'
+            custom_fz="q-and-a__fontsize"
+          />
+        </>
+        : <span className="q-and-a__empty"> Parace que no hay preguntas. </span>
+      }
       <div className="q-and-a__seller">
         <img src={ help } alt="" className="q-and-a__seller__icon" /> 
         <span className="q-and-a__seller__text"> ¿Cómo le pregunto al vendedor? </span> 

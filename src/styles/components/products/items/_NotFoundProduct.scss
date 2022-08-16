@@ -1,18 +1,53 @@
 
 .not-found { 
-
   &__container {
-    @include flex-box();
+    @include flex-box( center, center, wrap );
     max-width: 1018px;
-    max-height: 204px;
+    height: max-content; 
     margin: 48px auto;
-    padding: 42px 40px 32px;
+    padding: 32px 16px;
     border-radius: 4px;
     background-color: $white;
     h4 { margin-left: 10px; }
   }
   &__img { 
-    height: 202px !important;
     object-fit: cover;
+    border-radius: 10px;
+    margin-right: 45px;
+    margin-bottom: 15px;
+  }
+  &__block { 
+    @include flex-box( center, flex-start );
+    flex-direction: column;
+    &--text { 
+      font-size: 24px;
+      color: $black;
+      margin-bottom: 18px;
+    }
+    &--subtitle { 
+      line-height: 1.231;
+      color: $black_dark;
+      font-size: 16px;
+      padding: 0 0 3px 18px;
+      position: relative;
+      margin-left: 15px;
+      &::before { 
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        background-color: $black;
+        top: 3.5px;
+        left: 0;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  @include media-up( mdl ) { 
+    &__container { 
+      padding: 42px 40px 32px;
+    }
+    &__img { margin-bottom: none; }
   }
 }

@@ -8,7 +8,8 @@ interface Props {
 
 export const Opinions : React.FC<Props> = ({ type, opinions }) => {
 
-  if ( opinions.all_reviews.length === 0 ) return ( <span className='empity-message'> Valla, parece que no hay opiniones. </span>)
+  if ( opinions.all_reviews.length === 0 || opinions.positive_reviews.length === 0 || opinions.negative_reviews.length === 0 ) 
+    return ( <span className='empity-message'> Valla, parece que no hay opiniones. </span>)
 
   if ( type === 'positive' || type === 'negative' ) return (
     <ul className="list__opinions">

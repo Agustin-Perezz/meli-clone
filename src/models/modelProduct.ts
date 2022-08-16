@@ -49,7 +49,7 @@ export interface BasicInfo {
 }
 
 export interface Reviews {
-    rating_average: number;
+    rating_average_fixed: number;
     total_reviews:  number;
     rating_levels:  RatingLevel[];
     list_reviews:   ListReviews;

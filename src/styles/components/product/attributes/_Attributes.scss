@@ -28,6 +28,10 @@
     &__preview { width: 100%; }
   }
 
+  &__empty--message { 
+    color: $grey;
+  }
+
   @include media-up( lg ) { 
     &__container { 
       padding: 0;
