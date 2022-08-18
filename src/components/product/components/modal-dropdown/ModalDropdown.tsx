@@ -21,7 +21,7 @@ export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, addi
         <div className={`dropdown__header__title ${ custom_fz }`}> { dropdown_title } </div>
         <img src={ arrow_down } className='dropdown__header__icon' alt='down_arrow' />
       </div>
-      <div className={`dropdown__content ${ show && 'dropdown__content--show' }`}>
+      <div data-testid='content' className={`dropdown__content ${ show && 'dropdown__content--show' }`}>
         { children }
       </div>
       <button 

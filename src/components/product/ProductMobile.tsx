@@ -21,9 +21,9 @@ export const ProductMobile = () => {
   const { dataProduct } = React.useContext( ProductContext );
 
   return (
-    <section className='product__mobile'>
+    <section className='product__mobile' data-testid='product-mobile-component'>
       <Header information_header={ dataProduct!.basic_info }/>
-      <BoundleImagesMobile pictures={ dataProduct!.pictures } />
+      <BoundleImagesMobile pictures={ dataProduct!.pictures }/>
       <GeneralInformation />
       <ButtonsInformation />
       <Trader />

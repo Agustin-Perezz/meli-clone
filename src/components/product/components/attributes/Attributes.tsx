@@ -8,7 +8,7 @@ export const Attributes = () => {
 
   const { dataProduct } = useContext( ProductContext );
   const { list_attributes, basic_info } = { ...dataProduct };
-  
+
   return (
     <div className='attributes__container'>
       <h2 className="attributes__title"> Características de { basic_info?.title } </h2>

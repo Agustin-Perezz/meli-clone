@@ -41,7 +41,7 @@ export const NavBar : React.FC = () => {
           </div>
         </div>
         <div className="nav__block--2">
-            <form onSubmit={ handleSubmit }> 
+            <form onSubmit={ handleSubmit } role='form'> 
               <SearchIcon className='nav__loupe'/>
               <input 
                 name='queryProduct'
@@ -51,7 +51,8 @@ export const NavBar : React.FC = () => {
                 placeholder='Estoy buscando... '
                 autoComplete='off'
                 className='nav__input'
-                /> 
+                role='input'
+              /> 
             </form>
             <ul className="nav__links">
               <div className='nav__links--category'>

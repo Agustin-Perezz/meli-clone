@@ -22,7 +22,7 @@ export const Reviews = () => {
             <span className="reviews__header__block--porcentage"> { reviews?.rating_average_fixed } </span>
             <div className="reviews__modal__box">
               <div className="reviews__modal__box--b">
-                <GroupStars porcentage={ reviews!.rating_average_fixed } />
+                <GroupStars porcentage={ basic_info!.rating_average } />
                 <img src={ arrow_down } alt="arrow-down" className={`reviews__modal__icon ${ show && 'reviews__modal__icon--show'}`} />
               </div>
               <span className="reviews__modal__opinions">Promedio entre { reviews?.total_reviews } opiniones</span>

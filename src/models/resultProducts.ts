@@ -1,4 +1,3 @@
-
 export interface ObjectResponse {
     basic_info:        BasicInfo;
     result_products:   ResultProduct[];
