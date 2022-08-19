@@ -23,7 +23,7 @@ export const Trader : React.FC = () => {
         </div> 
       </div>
       <div className="trader__group">
-        <img src={ medal } alt="medal" className="trader__img" />
+        <img src={ medal } alt='picture-medal' className="trader__img" />
         <div className="trader__group__block">
           <span className='trader__group__block--text trader__medal'> MercadoLíder Platinum </span>
           <span className='trader__group__block--message'> ¡Es uno de los mejores del sitio! </span>
@@ -42,11 +42,11 @@ export const Trader : React.FC = () => {
           <span className="trader__information__block--value"> Ventas en los últimos tiempos </span>
         </div>
         <div className="trader__information__block">
-          <img src={ message_check } />
+          <img src={ message_check } alt='message' />
           <span className="trader__information__block--value"> Brinda buena atención </span>
         </div>
         <div className="trader__information__block">
-          <img src={ clock } /> 
+          <img src={ clock } alt='clock' /> 
           <span className="trader__information__block--value"> Despacha sus productos a tiempo </span>
         </div>
       </div>

@@ -22,7 +22,7 @@ export const PaymentsMethods = () => {
           <span className="payment__credit__header--subtitle"> ¡Cuotas sin interés con bancos seleccionados! </span>
         </div>
         <div className="payment__images">
-          { images.credit.map(( url, index) => ( <img src={ url } key={ index } className="payment__images__icon"/> ))}
+          { images.credit.map((url, index) => ( <img src={ url } key={ index } alt='credit' className="payment__images__icon"/> ))}
         </div>
       </div>
       <div className="payment__debit">
@@ -30,7 +30,7 @@ export const PaymentsMethods = () => {
           <span className="payment__debit__header--title"> Tarjetas de débito </span>
         </div>
         <div className="payment__images">
-          { images.debit.map(( url, index ) => ( <img src={ url } key={ index } className="payment__images__icon"/> ))}
+          { images.debit.map((url, index) => ( <img src={ url } key={ index } alt='debit' className="payment__images__icon"/> ))}
         </div>
       </div>
       <div className="payment__efectivo">
@@ -38,7 +38,7 @@ export const PaymentsMethods = () => {
           <span className="payment__efectivo__header--title"> Efectivo </span>
         </div>
         <div className="payment__images">
-          { images.efectivo.map(( url, index ) => ( <img src={ url } key={ index } className="payment__images__icon"/> ))}
+          { images.efectivo.map((url, index) => ( <img src={ url } key={ index } alt='efectivo' className="payment__images__icon"/> ))}
         </div>
       </div>
       <BlockDropdown content_title='Conocé otros medios de pago'/>

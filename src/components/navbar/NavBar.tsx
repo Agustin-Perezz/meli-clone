@@ -23,17 +23,17 @@ export const NavBar : React.FC = () => {
   const handleSubmit = ( e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
     if ( match !== null ) { navigate(`/items`) };
-    setQueryProduct( queryProduct );
+    if ( queryProduct.length !== 0 ) { setQueryProduct( queryProduct ); }
   };
   
   return (
     <div className="nav">
       <div className="nav__container">
         <div className='nav__block--1'>
-          <img className='nav__img--mobile' src={ meli_logo_small } alt="" />
+          <img className='nav__img--mobile' src={ meli_logo_small } alt="logo-meli-small" />
           <img className='nav__img--desktop nav__img--xl' src={ meli_logo_large } alt="" />
           <div className="nav__location--desktop">
-            <img src={ location } className="nav__gps--desktop" /> 
+            <img src={ location } alt='gps' className="nav__gps--desktop" /> 
             <div className='nav__location--direction'>
               <small>Enviar a</small>
               <span>Capital Federal</span>
@@ -41,8 +41,8 @@ export const NavBar : React.FC = () => {
           </div>
         </div>
         <div className="nav__block--2">
-            <form onSubmit={ handleSubmit } role='form'> 
-              <SearchIcon className='nav__loupe'/>
+            <form onSubmit={ handleSubmit } > 
+              <SearchIcon className='nav__loupe' role='img' />
               <input 
                 name='queryProduct'
                 onChange={ onChange }
@@ -82,7 +82,7 @@ export const NavBar : React.FC = () => {
       <hr className='nav__border' />
       <div className="nav__location">
         <div className='nav__location--block'>
-          <img src={ location } className="nav__gps" /> 
+          <img src={ location } className="nav__gps" alt='location-icon' /> 
           <span> Enviar a Capital Federal </span>
         </div>
       <ChevronRightIcon className='nav__arrow'/> 

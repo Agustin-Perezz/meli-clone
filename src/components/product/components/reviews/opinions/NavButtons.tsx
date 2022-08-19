@@ -11,19 +11,19 @@ export const NavButtons : React.FC<Props> = ({ type, setActiveType }) => {
   return (
     <ul className="opinions__nav">
       <button 
-        className={`opinions__nav--button ${ type == 'all' && 'button--active' }`}
+        className={`opinions__nav--button ${ type === 'all' && 'button--active' }`}
         onClick={() => setActiveType({ type: 'all' })} 
       > 
         Todas 
       </button>
       <button 
-        className={`opinions__nav--button ${ type == 'positive' && 'button--active' }`}
+        className={`opinions__nav--button ${ type === 'positive' && 'button--active' }`}
         onClick={() => setActiveType({ type: 'positive' })} 
       > 
         Positivas 
       </button>
       <button 
-        className={`opinions__nav--button ${ type == 'negative' && 'button--active' }`}
+        className={`opinions__nav--button ${ type === 'negative' && 'button--active' }`}
         onClick={() => setActiveType({ type: 'negative' })} 
       > 
         Negativas 

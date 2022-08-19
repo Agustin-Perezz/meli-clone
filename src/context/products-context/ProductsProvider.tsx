@@ -3,7 +3,6 @@ import { ProductsContext } from './ProductsContext';
 import { ObjectResponse } from '../../models/resultProducts';
 import { getProducts } from '../../services/products';
 import { FiltersContext } from '../filters-context';
-import { modelProduct } from '../../models/modelProduct';
 
 interface Props {
   children: JSX.Element | JSX.Element[];

@@ -3,7 +3,7 @@ import React from 'react';
 
 import not_found from '../../../assets/svg/not-found.svg';
 
-export const NotFoundProduct : React.FC<{}> = ({}) => {
+export const NotFoundProduct : React.FC = () => {
   return (
     <div className='not-found__container'> 
       <img src={ not_found } alt="not-found" className='not-found__img'/>

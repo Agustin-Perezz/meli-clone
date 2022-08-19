@@ -6,8 +6,6 @@ import { ListFiltersDesktop } from './filters/filters-desktop';
 import { ListItems, NotFoundProduct } from './items';
 import { LoadingComponent } from './LoadingComponent';
 
-import embalaje from '../../assets/images/packages.png';
-
 export const Products : React.FC = () => {
 
   const { data, isLoadingData } = useContext( ProductsContext );
@@ -38,9 +36,15 @@ export const Products : React.FC = () => {
   )
 
   return (
-    <div className='nothing__search'>
-      <img src={ embalaje } className='nothing__search__img' alt="embalaje" />
-      <h2 className='nothing__search__text'> Vaya, parece que no has buscado nada. </h2>
+    <div className='presentation'>
+      <h2 className='presentation__text'> Meli Clone developed by Agustin </h2>
+      <h5 className='presentation__subtitle'> Contact: </h5>
+      <div className="presentation__links">
+        <a href="https://www.linkedin.com/in/agustinperez-front-end-developer/" rel="noopener" className="presentation__links--link">Linkedin</a>
+        <a href="https://github.com/Agustin-Perezz" rel="noopener" className="presentation__links--link">GitHub</a>
+        <a href="https://twitter.com/agustinperez__" rel="noopener" className="presentation__links--link">Twitter</a>
+      </div>
     </div>
   )
+
 } 

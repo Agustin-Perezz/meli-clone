@@ -7,7 +7,7 @@ export interface PropsStateButtons {
   type: 'all' | 'positive' | 'negative';
 }
 
-export const ListOpinions : React.FC<{}> = ({}) => {
+export const ListOpinions : React.FC = () => {
 
   const [activeType, setActiveType] = React.useState<PropsStateButtons>({ type:'all' });
   const { dataProduct } = useContext( ProductContext );

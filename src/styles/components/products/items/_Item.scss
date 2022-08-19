@@ -6,7 +6,8 @@
   border-bottom: thin solid #eee;
   background-color: $white;
 
-  
+  // &:first-of-type { border-radius: 4px 4px 0 0 !important; background-color: red !important; }
+
   &__image {
     &--container {
       &:hover{ cursor: pointer; }
@@ -122,14 +123,6 @@
 
 @include media-up( sm )  {
   .box {
-    // height: 201px;
-    .box:first-child {
-      border-radius: 14px 14px 0 0;
-    }
-    &:last-child {
-      border-radius: 0 0 4px 4px;
-    }
-
     &__favorite {
        display: none;
     }

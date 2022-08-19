@@ -9,15 +9,30 @@
   }
 }
 
-.nothing__search { 
+.presentation { 
   @include flex-box();
-  min-height: 80vh;
-  &__img { 
-    height: 170px;
-    opacity: 0.3;
-  }
+  flex-direction: column;
+  min-height: 100vh;
   &__text { 
-    padding-left: 20px;
-    color: $grey;
+    color: $black_dark;
+    font-size: 20px;
+    line-height: 1.75rem;
+  }
+  &__subtitle { 
+    font-size: 19px;
+    font-family: 'Proxima Nova Light';
+    color: $black_five;
+    margin: 8px 0;
+  }
+  &__links { 
+    @include flex-box();
+    gap: 12px;
+    &--link {  
+      color: $sort_color;
+      &:hover { 
+        cursor: pointer; 
+        color: darken($color: $sort_color, $amount: 10)
+      }
+    }
   }
 }
