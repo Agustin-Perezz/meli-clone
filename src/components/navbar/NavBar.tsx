@@ -3,12 +3,13 @@ import { ProductsContext } from '../../context/products-context';
 import { useForm } from '../../hooks';
 
 import { SearchIcon, MenuIcon, ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/outline';
+import { useMatch, useNavigate } from 'react-router-dom';
+
 import meli_logo_small from '../../assets/images/meli_logo_small.png';
 import meli_logo_large from '../../assets/images/meli_logo.png';
 import shopping_cart from '../../assets/images/shopping-cart.png';
 import disney from '../../assets/images/disney_publi.png';
 import location from '../../assets/svg/location-icon.svg';
-import { useMatch, useNavigate } from 'react-router-dom';
 
 export const NavBar : React.FC = () => {
 
@@ -41,14 +42,16 @@ export const NavBar : React.FC = () => {
           </div>
         </div>
         <div className="nav__block--2">
-            <form onSubmit={ handleSubmit } > 
-              <SearchIcon className='nav__loupe' role='img' />
+            <form onSubmit={ handleSubmit } aria-label='form'> 
+              <button type='submit' className='nav__button'>
+                <SearchIcon className='nav__loupe' role='img' />
+              </button>
               <input 
                 name='queryProduct'
                 onChange={ onChange }
                 value={ queryProduct }
                 type="text" 
-                placeholder='Estoy buscando... '
+                placeholder='Estoy buscando...'
                 autoComplete='off'
                 className='nav__input'
                 role='input'

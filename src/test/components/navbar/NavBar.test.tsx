@@ -33,9 +33,13 @@ describe('Pruebas en <NavBar />', () => {
             </ProductsContext.Provider> 
         );
         const form = screen.getByRole('form');
+        const input = screen.getByRole('input');
+
+        fireEvent.change( input, { target: { value: 'a10' } } );
         fireEvent.submit( form );
 
-        expect( contextValue.setQueryProduct ).toHaveBeenCalled();
+        expect( contextValue.setQueryProduct ).toHaveBeenCalledTimes(1);
+        expect( contextValue.setQueryProduct ).toHaveBeenCalledWith('a10');
     });
 
 });

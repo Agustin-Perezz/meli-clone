@@ -5,16 +5,16 @@ import { ProductPage, ProductsPage } from "../pages"
 export const AppRoutes = () => {
   return (
     <BrowserRouter basename="/meli-clone">
-      <div className="main__container">
 
-      <NavBar />
-      <Routes>
-        <Route path="/items" element={ <ProductsPage /> } />
-        <Route path="/item/:id_item" element={ <ProductPage /> } />
-        
-        <Route path="*" element={ <Navigate replace to="/" /> }/> 
-      </Routes>
+      <div className="main__container">
+        <NavBar />
+        <Routes>
+          <Route path="/items" element={ <ProductsPage /> } />
+          <Route path="/item/:id_item" element={ <ProductPage /> } />
+          <Route path="*" element={ <Navigate replace to="/meli-clone" /> }/> 
+        </Routes>
       </div>
+
     </BrowserRouter>
   )
 }

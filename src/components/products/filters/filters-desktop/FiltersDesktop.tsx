@@ -11,7 +11,7 @@ export const FiltersDesktop : React.FC<Props> = ({ filter }) => {
   const { setNewFilter } = useContext( FiltersContext );
 
   return (
-    <div className='filter__desktop__box'> 
+    <div className='filter__desktop__box' > 
       <div className="filter__desktop__title">
         <h3> { filter.name } </h3> 
       </div>
@@ -20,6 +20,7 @@ export const FiltersDesktop : React.FC<Props> = ({ filter }) => {
           filter.values.map(( filter_children, index ) => (
             <li 
               className="filter__desktop__children" 
+              data-test-id='filter-button-test'
               key={ index } 
               onClick={() => setNewFilter({ key: filter.id, id_filter: filter_children.id, name: filter_children.name })}
             >
