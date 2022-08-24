@@ -15,8 +15,8 @@ export const Attributes = () => {
       <h4 className='attributes__title--preview'> Características generales </h4>
       {  
         list_attributes?.attributes.length !== 0 ?
-        <>
-          <div className='attributes__group'>
+        <div className='attributes__first'>
+          <div className='attributes__group attributes__group--preview'>
             {
               list_attributes!.previewAttribute.map(( attribute, index ) => ( 
                 <Attribute attribute={ attribute } key={ index } />
@@ -26,9 +26,10 @@ export const Attributes = () => {
           <ModalDropdown 
             children={ <ListAttributes attributes={ list_attributes!.attributes } /> } 
             dropdown_title='Ver más caracteristicas' 
+            additional_className='attributes__modal'
           />
-        </>
-        : <span className='attributes__empty--message'> Este erticulo no contiene attributos </span>
+        </div>
+        : <span className='attributes__empty--message'> Este artículo no contiene atributos </span>
       }
     </div>
   )

@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 import { ChevronRightIcon } from '@heroicons/react/outline';
 
 interface Props {

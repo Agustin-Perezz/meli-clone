@@ -11,6 +11,7 @@ describe('Pruebas <Products />', () => {
             isLoadingData: true,
             queryProduct: null,
             setQueryProduct: jest.fn(),
+            resetContext: jest.fn(),
         }
         render ( 
             <ProductsContext.Provider value={{ ...contexValues }}>

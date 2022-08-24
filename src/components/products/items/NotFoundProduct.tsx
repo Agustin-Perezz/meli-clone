@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 import not_found from '../../../assets/svg/not-found.svg';
 
 export const NotFoundProduct : React.FC = () => {

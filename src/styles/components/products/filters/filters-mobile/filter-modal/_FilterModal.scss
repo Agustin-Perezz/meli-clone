@@ -7,7 +7,7 @@
     background-color: $white;
     z-index: 100;
     width: 100%;
-    position: absolute;
+    position: fixed;
     min-height: 100vh;
     height: max-content;
     visibility: hidden;
@@ -16,7 +16,15 @@
     &--show {
       visibility: visible;
       top: 0px;
+      body{  overflow-y: hidden;}
     }
+  }
+
+  &__content { 
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 100vh;
+    width: 100vw;
   }
 
   &__header { 

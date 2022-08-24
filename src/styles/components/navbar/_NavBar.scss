@@ -1,3 +1,4 @@
+
 .nav {
   @include flex-box( center, center, wrap );
   width: 100%;
@@ -65,7 +66,7 @@
     max-height: 39px;
     border: none;
     outline: none;
-    padding: 5px 6px 7px 35px;
+    padding: 5px 6px 7px 37px;
     color: $black_one;
     font-size: 15px;
   }
@@ -80,9 +81,9 @@
 
   &__button { 
     position: absolute;
-    top: 0;
-    right: 0px;
-    width: 50px;
+    top: 1px;
+    left: 0px;
+    width: 40px;
     height: 100%;
     &:hover { cursor: pointer; }
   }
@@ -130,18 +131,21 @@
     }
   }
 
-  &__img--mobile {
-    @include settings-img( 44px, 32px );
+  &__img {
+    &--mobile { 
+      @include settings-img( 44px, 32px );
+    }
+    &--desktop{ 
+      display: none;
+      &:hover { cursor: pointer;}
+    }
+    &--xxl {
+      @include settings-img( 305px, 39px );
+    }
   }
   &__icon--mobile {
     margin: 5px;
     @include settings-img( 23px, 23px );
-  }
-  &__img--xxl {
-    @include settings-img( 305px, 39px );
-  }
-  &__img--desktop{ 
-    display: none;
   }
 }
   
@@ -166,6 +170,8 @@
     &__block--1 { 
       padding-right: 20px;
     }
+
+    &__button { right: 0; left: inherit; }
 
     &__loupe {
       left: inherit;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { StateModal } from './ListFiltersMobile';
 
 import sync_icon from '../../../../assets/svg/sync_arrow.svg';

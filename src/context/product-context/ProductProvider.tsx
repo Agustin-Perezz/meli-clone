@@ -23,7 +23,6 @@ export const ProductProvider : React.FC<Props> = ({ children }) => {
 
   React.useEffect(() => {
     const getData = async() => {
-      console.log('getting data')
       const response = await getProduct( id_item! );
       setState({ dataProduct: response });
     }

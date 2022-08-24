@@ -15,7 +15,7 @@ export const NavBar : React.FC = () => {
 
   const initialQuery = localStorage.getItem('queryProduct');
 
-  const { onChange, queryProduct } = useForm({ queryProduct: initialQuery || '' });
+  const { onChange, queryProduct, reset } = useForm({ queryProduct: initialQuery || '' });
   const { setQueryProduct  } = useContext( ProductsContext );
 
   const navigate = useNavigate();
@@ -23,16 +23,18 @@ export const NavBar : React.FC = () => {
 
   const handleSubmit = ( e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
-    if ( match !== null ) { navigate(`/items`) };
-    if ( queryProduct.length !== 0 ) { setQueryProduct( queryProduct ); }
+    if ( queryProduct.length !== 0 ) { 
+      setQueryProduct( queryProduct ); 
+      match && navigate(`items?q=${ queryProduct }`);
+    }
   };
-  
+
   return (
     <div className="nav">
       <div className="nav__container">
         <div className='nav__block--1'>
-          <img className='nav__img--mobile' src={ meli_logo_small } alt="logo-meli-small" />
-          <img className='nav__img--desktop nav__img--xl' src={ meli_logo_large } alt="" />
+          <img className='nav__img--mobile' src={ meli_logo_small } alt="logo-meli-small" onClick={() => reset()}/>
+          <img className='nav__img--desktop nav__img--xl' src={ meli_logo_large } alt="" onClick={() => reset()}/>
           <div className="nav__location--desktop">
             <img src={ location } alt='gps' className="nav__gps--desktop" /> 
             <div className='nav__location--direction'>
@@ -50,6 +52,7 @@ export const NavBar : React.FC = () => {
                 name='queryProduct'
                 onChange={ onChange }
                 value={ queryProduct }
+                autoFocus
                 type="text" 
                 placeholder='Estoy buscando...'
                 autoComplete='off'

@@ -30,6 +30,6 @@ export const ModalDropdown : React.FC<Props> = ({ children, dropdown_title, addi
         onClick={() => setShow( !show )}
         > 
           Ocultar contenido 
-        </button>
+      </button>
     </div>  
 )}

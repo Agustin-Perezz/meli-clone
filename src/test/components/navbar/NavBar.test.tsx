@@ -10,7 +10,8 @@ describe('Pruebas en <NavBar />', () => {
         isLoadingData: false,
         queryProduct: null,
         data: null,
-        setQueryProduct: jest.fn()
+        setQueryProduct: jest.fn(),
+        resetContext: jest.fn()
     }
 
     beforeEach(() => jest.clearAllMocks());

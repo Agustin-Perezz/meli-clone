@@ -1,0 +1,27 @@
+.presentation { 
+  @include flex-box();
+  flex-direction: column;
+  min-height: calc( 100vh - 100px );
+  &__text { 
+    color: $black_dark;
+    font-size: 20px;
+    line-height: 1.75rem;
+  }
+  &__subtitle { 
+    font-size: 19px;
+    font-family: 'Proxima Nova Light';
+    color: $black_five;
+    margin: 8px 0;
+  }
+  &__links { 
+    @include flex-box();
+    gap: 12px;
+    &--link {  
+      color: $sort_color;
+      &:hover { 
+        cursor: pointer; 
+        color: darken($color: $sort_color, $amount: 10)
+      }
+    }
+  }
+}

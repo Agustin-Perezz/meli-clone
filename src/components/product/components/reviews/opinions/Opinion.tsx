@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Review } from '../../../../../models/modelProduct';
 import { GroupStars } from '../stars/GroupStars';
 

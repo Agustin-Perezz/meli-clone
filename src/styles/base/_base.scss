@@ -21,6 +21,10 @@
     url('../../assets/fonts/Proxima-Nova-Reg-It.otf') format('woff2'),
 }
 
+html { 
+  background-color: #EDEDED;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -35,9 +39,9 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-
-  html { height: 100%; }
 
   h1,
   h2,

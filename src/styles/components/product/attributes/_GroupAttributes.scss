@@ -38,6 +38,7 @@
     &__group { 
       width: 350px; 
       &:nth-child(even) { margin-left: 30px;}
+      &--preview { width: 98%; }
     }
     &__list { 
       width: 100%;

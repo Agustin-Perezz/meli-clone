@@ -1,5 +1,5 @@
 
-import caja from '../../assets/images/caja.png';
+import caja from '../../../assets/images/caja.png';
 
 export const LoadingComponent = () => {
   return (

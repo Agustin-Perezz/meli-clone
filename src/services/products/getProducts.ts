@@ -4,7 +4,6 @@ const BASE_URL = 'http://localhost:3080/api';
 export const getProducts = async( nameProduct: string, filters: Filter[], activeSort: string ) => {
 
   try {
-    // console.log( filters )
     const resp = await fetch(`${ BASE_URL }/items/`, {
       method: 'POST',
       headers: {

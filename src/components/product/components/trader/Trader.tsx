@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../../../context/product-context';
+import { BlockDropdown } from '../modal-dropdown/BlockDropdown';
 
 import location_mobile from '../../../../assets/svg/location-mobile.svg';
 import message_check from '../../../../assets/svg/message-check.svg';
 import clock from '../../../../assets/svg/clock.svg';
 import medal from '../../../../assets/svg/medal.svg';
-import { BlockDropdown } from '../modal-dropdown/BlockDropdown';
 
 export const Trader : React.FC = () => {
 

@@ -20,6 +20,8 @@ export const ListFiltersMobile : React.FC<Props> = ({ filters, sorts }) => {
     show: false,
   });
 
+  show ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
+
   return ( 
     <div className='filters__mobile'> 
       <NavBarFiltersMobile setShowModal={ setSettingsModal }/>

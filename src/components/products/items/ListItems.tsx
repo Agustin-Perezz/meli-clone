@@ -1,4 +1,3 @@
-import React from 'react';
 import { ResultProduct, BasicInfo, AvailableSort } from '../../../models/resultProducts';
 import { Item } from './Item';
 import { ViewOptionsProducts } from './ViewOptionsProducts';

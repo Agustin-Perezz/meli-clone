@@ -31,18 +31,18 @@ export const QuestionsAndAnswer = () => {
       </div>
       { 
         list_questions?.questions.length ?  
-        <>
-          <div className="q-and-a__preview">
-            <div className="q-and-a__preview__title"> Últimas realizadas </div>
-            <Question question_object={ list_questions!.previewQuestion }/>
-          </div>
-          <ModalDropdown 
-            dropdown_title={`Ver ${ list_questions!.questions.length } resultados más `}
-            children={ <ListQuestions questions={ list_questions!.questions }/>} 
-            additional_className='q-and-a__modal'
-            custom_fz="q-and-a__fontsize"
-          />
-        </>
+          <>
+            <div className="q-and-a__preview">
+              <div className="q-and-a__preview__title"> Últimas realizadas </div>
+              <Question question_object={ list_questions!.previewQuestion }/>
+            </div>
+            <ModalDropdown 
+              dropdown_title={`Ver ${ list_questions!.questions.length } resultados más `}
+              children={ <ListQuestions questions={ list_questions!.questions }/>} 
+              additional_className='q-and-a__modal'
+              custom_fz="q-and-a__fontsize"
+            />
+          </>
         : <span className="q-and-a__empty"> Parace que no hay preguntas. </span>
       }
       <div className="q-and-a__seller">

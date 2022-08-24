@@ -121,7 +121,7 @@
   }
 }
 
-@include media-up( sm )  {
+@include media-up( md )  {
   .box {
     &__favorite {
        display: none;

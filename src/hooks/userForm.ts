@@ -1,14 +1,22 @@
 import { ChangeEvent, useState } from "react"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useMatch } from 'react-router-dom';
+import { useContext } from 'react';
+import { ProductsContext } from "../context/products-context";
 
-export const useForm = <T>( initialState: T ) => {
+export const useForm = ( initialState = { queryProduct: ''  } ) => {
+
+  const { resetContext } = useContext( ProductsContext );
 
   const navigate = useNavigate();
+  const match = useMatch('/item/:id_item');
 	
-	const [formData, setFormData] =  useState( initialState );
+	const [formData, setFormData] = useState( initialState );
 
 	const reset = () => {
-		setFormData( initialState );
+    localStorage.clear();
+    resetContext();
+    setFormData({ queryProduct: '' });
+    navigate('/', { replace: true } );
 	}
 
 	const onChange = ( event: ChangeEvent<HTMLInputElement> ) => {
@@ -18,7 +26,7 @@ export const useForm = <T>( initialState: T ) => {
       [ event.target.name ]: event.target.value,
     }));
     
-    navigate(`?q=${ event.target.value }`);
+    !match && navigate(`items?q=${ event.target.value }`);
 
 	}
 
@@ -29,6 +37,4 @@ export const useForm = <T>( initialState: T ) => {
     onChange,
     reset
   }
-  
-	
 }

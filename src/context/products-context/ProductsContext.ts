@@ -8,6 +8,7 @@ export interface ProductsContextProps {
 
   // Methods
   setQueryProduct: ( query: string ) => void;
+  resetContext: () => void;
 }
 
 export const ProductsContext = createContext<ProductsContextProps>( {} as ProductsContextProps );

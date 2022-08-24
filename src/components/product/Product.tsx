@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductContext } from '../../context/product-context';
 import { useViewPort } from '../../hooks';
-import { LoadingComponent } from '../products/LoadingComponent';
+import { LoadingComponent } from '../products/ui/LoadingComponent';
 import { ProductDesktop } from './ProductDesktop';
 import { ProductMobile } from './ProductMobile';
 

@@ -10,7 +10,7 @@ export const GeneralInformation : React.FC = () => {
 
   const { dataProduct } = useContext( ProductContext );
 
-  const { basic_info, seller } =  { ...dataProduct! };
+  const { basic_info, seller,  } =  { ...dataProduct! };
   
   return (
     <div className='information'> 

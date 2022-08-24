@@ -1,8 +1,9 @@
 
 .product__desktop { 
   @include flex-box( center, flex-start );
-  margin: 40px auto;
-  height: max-content;
+  min-height: 100%;
+  margin: 40px auto 40px auto;
+  padding-bottom: 2px;
   max-width: 1184px;
   min-width: 800px;
   background-color: $white;

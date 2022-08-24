@@ -2,9 +2,9 @@ import React from 'react'
 import { useContext } from "react"
 import { ProductContext } from "../../../../context/product-context"
 import { GroupStars, GroupStarsPorcentage } from "./stars";
+import { ListOpinions } from './opinions';
 
 import arrow_down from '../../../../assets/svg/arrow_down.svg';
-import { ListOpinions } from './opinions';
 
 export const Reviews = () => {
 

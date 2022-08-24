@@ -11,7 +11,12 @@ export const ListFiltersActiveDesktop = () => {
     <ul className={`filters__active__desktop ${ filters.length === 0 && 'not-filters'}`}>
       { 
         filters.map(( filter, index ) => (
-          <li data-test-id='filter-active' className='filters__active__desktop__filter' key={ index } onClick={() => removeFilter( filter.id_filter )}>
+          <li 
+            onClick={() => removeFilter( filter.id_filter )}
+            className='filters__active__desktop__filter' 
+            key={ index } 
+            data-test-id='filter-active' 
+          >
             <span className='filters__active__desktop__filter--label'> { filter.name } </span>
             <img src={ close } className='filters__active__desktop__filter--icon' alt='close-icon'/>
           </li>

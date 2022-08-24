@@ -16,13 +16,12 @@
   './components/products/items/ViewOptionsProducts',
   './components/products/items/NotFoundProduct';
 
-@import 
-  './components/products/LoadingComponent',
-  './components/products/Products';
+@import './components/products/Products';
 
-@import
-  './components/products/filters/filters-mobile/ListFiltersMobile',
-  './components/products/filters/filters-mobile/NavBarFiltersMobile';
+@import './components/products/ui/LoadingComponent',
+        './components/products/ui/Presentation';
+
+@import './components/products/filters/filters-mobile/NavBarFiltersMobile';
 
 @import './components/products/filters/list-filters-active/ListFiltersActiveMobile',
         './components/products/filters/list-filters-active/_ListFiltersActiveDesktop';
@@ -78,5 +77,4 @@
         './components/product/reviews/opinions/Opinion',
         './components/product/reviews/opinions/NavButtons';
 
-
-
+// <----------- PRODUCT STYLES ----------->

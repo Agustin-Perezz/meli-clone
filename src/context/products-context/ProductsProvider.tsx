@@ -52,12 +52,15 @@ export const ProductsProvider : React.FC<Props> = ({ children }) => {
     setState({ ...state, isLoadingData: false, data: response });
   };
 
+  const resetContext = () => { setState( INIT_STATE ) };
+
   return (
     <ProductsContext.Provider value={{
       ...state,
 
       // Methods
-      setQueryProduct
+      setQueryProduct,
+      resetContext,
     }}>
       { children }
     </ProductsContext.Provider>

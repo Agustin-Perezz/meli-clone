@@ -4,15 +4,16 @@ import { ListFiltersMobile } from './filters/filters-mobile';
 import { ListFiltersDesktop } from './filters/filters-desktop';
 
 import { ListItems, NotFoundProduct } from './items';
-import { LoadingComponent } from './LoadingComponent';
+import { LoadingComponent, Presentation } from './ui';
 
 export const Products : React.FC = () => {
 
   const { data, isLoadingData } = useContext( ProductsContext );
+  const initialQuery = localStorage.getItem('queryProduct');
 
   if ( isLoadingData ) return ( <LoadingComponent /> );
 
-  if ( data !== null && data.basic_info.total !== 0 ) return ( 
+  if ( data !== null && data.basic_info.total !== 0 && initialQuery !== null ) return ( 
     <div className='products__main__container'>
       <ListFiltersMobile 
         filters={ data.available_filters }  
@@ -36,15 +37,7 @@ export const Products : React.FC = () => {
   )
 
   return (
-    <div className='presentation'>
-      <h2 className='presentation__text'> Meli Clone developed by Agustin </h2>
-      <h5 className='presentation__subtitle'> Contact: </h5>
-      <div className="presentation__links">
-        <a href="https://www.linkedin.com/in/agustinperez-front-end-developer/" rel="noopener" className="presentation__links--link">Linkedin</a>
-        <a href="https://github.com/Agustin-Perezz" rel="noopener" className="presentation__links--link">GitHub</a>
-        <a href="https://twitter.com/agustinperez__" rel="noopener" className="presentation__links--link">Twitter</a>
-      </div>
-    </div>
+    <Presentation />
   )
 
 } 
