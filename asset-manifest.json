@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/meli-clone/static/css/main.21724338.css",
+    "main.js": "/meli-clone/static/js/main.6fd81741.js",
+    "static/media/ProximaNova-Regular.otf": "/meli-clone/static/media/ProximaNova-Regular.ea03f826587148b7335d.otf",
+    "static/media/Proxima-Nova-Reg-It.otf": "/meli-clone/static/media/Proxima-Nova-Reg-It.8fe56e6b5ba432b409d1.otf",
+    "static/media/Proxima-Nova-Alt-Light.otf": "/meli-clone/static/media/Proxima-Nova-Alt-Light.3a7c914cbc8035135c38.otf",
+    "static/media/caja.png": "/meli-clone/static/media/caja.5cd1bde30604b35a2787.png",
+    "static/media/shopping-cart.png": "/meli-clone/static/media/shopping-cart.c3d59ba1c6e684214828.png",
+    "static/media/not-found.svg": "/meli-clone/static/media/not-found.dba0fe6a7b7ca51f739a6511b5eace23.svg",
+    "index.html": "/meli-clone/index.html",
+    "static/media/full-icon.svg": "/meli-clone/static/media/full-icon.7b2afbf298c00535df1f60deedca983a.svg",
+    "static/media/hearth.svg": "/meli-clone/static/media/hearth.d530f8214d011cfeb4e6e5e75f08c65b.svg",
+    "static/media/filter_icon.svg": "/meli-clone/static/media/filter_icon.973c9563d3a17816d6eb82e76dc91c68.svg",
+    "static/media/clock.svg": "/meli-clone/static/media/clock.65d7cb7387d5200e667f70e0df381ede.svg",
+    "static/media/share.svg": "/meli-clone/static/media/share.d350562df58bdaa500c76084e2a1c742.svg",
+    "static/media/message-check.svg": "/meli-clone/static/media/message-check.87c4d0077532de9320e3aee139b6f127.svg",
+    "static/media/location-mobile.svg": "/meli-clone/static/media/location-mobile.1c62cbefbc41a5f3e0581f78ab82011f.svg",
+    "static/media/medal.svg": "/meli-clone/static/media/medal.17a7e88046fd051af7cc8c15f6147e0a.svg",
+    "static/media/location-icon-two.svg": "/meli-clone/static/media/location-icon-two.74f37afbbfa00b6894cbe784c46d8de2.svg",
+    "static/media/location-icon.svg": "/meli-clone/static/media/location-icon.17b29d7da68a791a3e15d2a8a7817c12.svg",
+    "static/media/sync_arrow.svg": "/meli-clone/static/media/sync_arrow.52624fd7d9870cfb6fc1ff28a998c3e9.svg",
+    "static/media/arrow_down.svg": "/meli-clone/static/media/arrow_down.23d65b6644e4439fea080ceb50de5795.svg",
+    "static/media/close.svg": "/meli-clone/static/media/close.c465564aa3e99609fe9a5ddd9f7d31f1.svg",
+    "static/media/go_back.svg": "/meli-clone/static/media/go_back.50d420d0b1b639af2a5046c4671bf3e1.svg",
+    "main.21724338.css.map": "/meli-clone/static/css/main.21724338.css.map",
+    "main.6fd81741.js.map": "/meli-clone/static/js/main.6fd81741.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21724338.css",
+    "static/js/main.6fd81741.js"
+  ]
+}
