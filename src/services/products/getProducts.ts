@@ -1,5 +1,6 @@
 import { Filter } from '../../context/filters-context/FiltersContext';
-const BASE_URL = 'http://localhost:3080/api';
+
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export const getProducts = async( nameProduct: string, filters: Filter[], activeSort: string ) => {
 
