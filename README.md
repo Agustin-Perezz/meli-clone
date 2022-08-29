@@ -3,7 +3,9 @@
 *Aplicación inicializada con:*  [Create React App](https://create-react-app.dev/).
  
 Este proyecto tiene como finalidad copiar la ui de Mercado Libre. 
- 
+
+Link Deploy: https://agustin-perezz.github.io/meli-clone/
+
 Permite al usuario buscar productos, visualizar la vista completa de un producto en específico, aplicar filtros y ordenamiento a la búsqueda.
  
 **Nota:** Todos los datos de la aplicación son extraídos de la [API](https://developers.mercadolibre.com.ar/es_ar/api-docs-es) oficial de Mercado Libre.
