@@ -18,3 +18,7 @@ Tecnologías implementadas: React, Sass, React-Testing-Library, Cypress, Node-JS
 
 Cualquier review en cuanto a la performance de la página será apreciada, contactame en: [linkedin](https://www.linkedin.com/in/agustinperez-front-end-developer/).
 
+## Instalación
+
+1. Clonar el proyecto
+
