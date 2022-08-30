@@ -18,6 +18,7 @@ export interface BasicInfo {
     total_reviews:  number;
     rating_average: number;
     free_shipping:  boolean;
+    country_id: string;
 }
 
 export interface ListAttributes {

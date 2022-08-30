@@ -11,12 +11,17 @@ export const GeneralInformation : React.FC = () => {
   const { dataProduct } = useContext( ProductContext );
 
   const { basic_info, seller,  } =  { ...dataProduct! };
-  
+
   return (
     <div className='information'> 
       <div className="information__price">
-        <span className="information__price__value"> { basic_info.price } </span>
-        <span className="information__price__cuotes"> en 12 x { basic_info.installaments } </span>
+        {
+          basic_info.country_id === 'ARS' ? 
+            <span className="information__price__value"> { basic_info.price } </span>
+          :
+            <span className="information__price__value">U$S { basic_info.price } </span>
+        }
+        { basic_info.country_id === 'ARS'  && <span className="information__price__cuotes"> en 12 x { basic_info.installaments } </span> }
         <span className="information__price__payment"> Ver los medios de pagos </span>
       </div>
       <div className="shipping">
