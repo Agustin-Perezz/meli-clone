@@ -26,7 +26,12 @@ export const Item : React.FC<Props> = ({ product }) => {
         <div className="box__information__price">
           { product.offert !== false && <span className='box__information__price--original'> { product.offert.regular_amount } </span>}
           <div className='box__information__block'>
-            <span className='box__information__price--fraction'>{ product.price }</span>
+            {
+              product.country_id === 'ARS' ?             
+                <span className='box__information__price--fraction'>{ product.price }</span>
+              :
+                <span className='box__information__price--fraction'>U$S { product.price }</span>
+            }
             { 
               product.offert !== false && 
               <span className='box__information__price--offert'> { product.offert.offer_percentaje }% OFF </span> 

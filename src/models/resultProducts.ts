@@ -39,6 +39,7 @@ export interface ResultProduct {
     condition:     Condition;
     installments:  boolean | number;
     offert:        false | OffertClass;
+    country_id: string;
 }
 
 export enum Condition {
