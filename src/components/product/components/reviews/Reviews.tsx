@@ -13,6 +13,8 @@ export const Reviews = () => {
   const { dataProduct } = useContext( ProductContext );
   const { reviews, basic_info } = { ...dataProduct };
 
+  if ( !reviews ) return <span className='opinion-disabled'>Opiniones no disponibles.</span>
+
   return (
     <div className="reviews__container">
       <div className="reviews__header">

@@ -6,7 +6,7 @@ export interface modelProduct {
     list_attributes: ListAttributes;
     description:     string[];
     list_questions:  ListQuestions;
-    reviews:         Reviews;
+    reviews?:         Reviews;
 }
 
 export interface BasicInfo {

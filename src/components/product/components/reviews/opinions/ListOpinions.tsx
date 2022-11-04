@@ -15,6 +15,6 @@ export const ListOpinions : React.FC = () => {
   return (
     <div className='opinions__container'> 
       <NavButtons type={ activeType.type } setActiveType={ setActiveType } />
-      <Opinions type={ activeType.type } opinions={ dataProduct!.reviews.list_reviews } />
+       {dataProduct?.reviews && <Opinions type={ activeType.type } opinions={ dataProduct!.reviews.list_reviews } /> }
     </div>  
 )}
