@@ -2,7 +2,7 @@
  
 *Aplicación inicializada con:*  [Create React App](https://create-react-app.dev/).
  
-Este proyecto tiene como finalidad copiar la ui de Mercado Libre. 
+Este proyecto tiene como finalidad copiar la UI de Mercado Libre. 
 
 Link Deploy: https://agustin-perezz.github.io/meli-clone/
 
