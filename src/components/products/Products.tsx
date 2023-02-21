@@ -19,7 +19,7 @@ export const Products: React.FC = () => {
         <ListFiltersMobile filters={data.availableFilters} sorts={data.availableSorts} />
         <ListFiltersDesktop
           filters={data.availableFilters}
-          basic_information={data.basicInfoProduct}
+          basicInformationProduct={data.basicInfoProduct}
           categories={data.productCategories}
         />
         <ListItems
