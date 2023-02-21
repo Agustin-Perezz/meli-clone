@@ -10,7 +10,11 @@ interface Props {
   categories: string[];
 }
 
-export const ListFiltersDesktop: React.FC<Props> = ({ filters, basicInformationProduct, categories }) => {
+export const ListFiltersDesktop: React.FC<Props> = ({
+  filters,
+  basicInformationProduct,
+  categories,
+}) => {
   return (
     <div className="filters__desktop__container">
       <div className="filters__desktop__header">
