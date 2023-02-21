@@ -28,8 +28,8 @@
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "prepare": "husky install"
+    "prettier": "npx prettier --write \"src/**/*.{ts,tsx,cjs,json}\"",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,7 @@
   "devDependencies": {
     "cypress": "^10.6.0",
     "husky": "^8.0.3",
+    "prettier": "^2.8.4",
     "url-loader": "^4.1.1"
   }
 }
