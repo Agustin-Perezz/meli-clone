@@ -1,9 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 import { modelProduct } from '../../models/modelProduct';
 
-export interface ProductContextProps { 
+export interface ProductContextProps {
   dataProduct: modelProduct | undefined;
 }
 
-export const ProductContext = createContext<ProductContextProps>( {} as ProductContextProps );
-
+export const ProductContext = createContext<ProductContextProps>({} as ProductContextProps);

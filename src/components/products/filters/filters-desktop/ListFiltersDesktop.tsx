@@ -10,19 +10,18 @@ interface Props {
   categories: string[];
 }
 
-export const ListFiltersDesktop : React.FC<Props> = ({ filters, basic_information, categories }) => {
+export const ListFiltersDesktop: React.FC<Props> = ({ filters, basic_information, categories }) => {
   return (
-    <div className='filters__desktop__container'> 
+    <div className="filters__desktop__container">
       <div className="filters__desktop__header">
-        { categories.length !== 0 && <ListCategories categories={ categories } /> }
-        <h1 className='filters__desktop__query'> { basic_information.query } </h1>
-        <span className='filters__desktop__total'> { basic_information.total } resultados </span>
+        {categories.length !== 0 && <ListCategories categories={categories} />}
+        <h1 className="filters__desktop__query"> {basic_information.query} </h1>
+        <span className="filters__desktop__total"> {basic_information.total} resultados </span>
         <ListFiltersActiveDesktop />
       </div>
-      { 
-        filters.map(( filter, index ) => (
-          <FiltersDesktop filter={ filter } key={ index } />
-        ))
-      }
-    </div>  
-)}
+      {filters.map((filter, index) => (
+        <FiltersDesktop filter={filter} key={index} />
+      ))}
+    </div>
+  );
+};

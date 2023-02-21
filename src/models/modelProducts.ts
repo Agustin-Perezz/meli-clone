@@ -7,8 +7,8 @@ export interface ObjectResponse {
 }
 
 export interface AvailableSort {
-    name: 'Más relevante' | 'Menor precio' | 'Mayor precio';
-    id: 'relevance' | 'price_asc' | 'price_desc';
+  name: 'Más relevante' | 'Menor precio' | 'Mayor precio';
+  id: 'relevance' | 'price_asc' | 'price_desc';
 }
 
 interface AvailableFilter {
@@ -49,5 +49,5 @@ interface BasicInfoProduct {
 }
 
 export enum Condition {
-  New = "new",
+  New = 'new',
 }

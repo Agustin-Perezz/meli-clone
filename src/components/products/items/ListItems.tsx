@@ -11,23 +11,21 @@ interface Props {
   sorts: AvailableSort[];
 }
 
-export const ListItems : React.FC<Props> = ({ products, name, sorts }) => {
+export const ListItems: React.FC<Props> = ({ products, name, sorts }) => {
   return (
-    <div className='container__products'> 
+    <div className="container__products">
       <div className="products__header">
-        <h3 className='products__header__title'> { name.query } </h3>
-        <ViewOptionsProducts sorts={ sorts } />
+        <h3 className="products__header__title"> {name.query} </h3>
+        <ViewOptionsProducts sorts={sorts} />
         <ListFiltersActiveMobile />
       </div>
-      {
-        products.map(( product, index ) => (
-          <Item product={ product } key={ index } />
-        ))
-      }
+      {products.map((product, index) => (
+        <Item product={product} key={index} />
+      ))}
       <div className="products__footer">
-        <ExclamationCircleIcon className='products__footer__icon'/>
+        <ExclamationCircleIcon className="products__footer__icon" />
         <p className="products__footer__text"> El contenido esta limitado a 50 resultados. </p>
       </div>
     </div>
   );
-}
+};

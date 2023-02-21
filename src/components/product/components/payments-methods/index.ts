@@ -1,2 +1,2 @@
 export { PaymentsWarranty } from './PaymentsWarranty';
-export { PaymentsMethods } from "./PaymentsMethods";
+export { PaymentsMethods } from './PaymentsMethods';

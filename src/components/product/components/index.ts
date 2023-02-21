@@ -9,4 +9,3 @@ export { Header } from './header';
 export { PaymentsMethods, PaymentsWarranty } from './payments-methods';
 export { QuestionsAndAnswer } from './questions-and-answer/QuestionsAndAnswer';
 export { ButtonsInformation } from './general-information/ButtonsInformation';
-

@@ -1,1 +1,1 @@
-export { Attributes } from "./Attributes";
+export { Attributes } from './Attributes';
