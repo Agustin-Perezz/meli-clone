@@ -1,12 +1,13 @@
 import React from 'react';
-import { AvailableFilter, BasicInfo } from '../../../../models/resultProducts';
+import { BasicInfoProduct } from '../../../../models/modelProducts';
+import { AvailableFilter } from '../../../../models/resultProducts';
 import { ListCategories } from '../../categories';
 import { ListFiltersActiveDesktop } from '../list-filters-active';
 import { FiltersDesktop } from './FiltersDesktop';
 
 interface Props {
   filters: AvailableFilter[];
-  basic_information: BasicInfo;
+  basic_information: BasicInfoProduct;
   categories: string[];
 }
 
@@ -15,8 +16,8 @@ export const ListFiltersDesktop: React.FC<Props> = ({ filters, basic_information
     <div className="filters__desktop__container">
       <div className="filters__desktop__header">
         {categories.length !== 0 && <ListCategories categories={categories} />}
-        <h1 className="filters__desktop__query"> {basic_information.query} </h1>
-        <span className="filters__desktop__total"> {basic_information.total} resultados </span>
+        <h1 className="filters__desktop__query"> {basic_information.queryProduct} </h1>
+        <span className="filters__desktop__total"> {basic_information.totalResults} resultados </span>
         <ListFiltersActiveDesktop />
       </div>
       {filters.map((filter, index) => (

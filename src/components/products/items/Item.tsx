@@ -4,9 +4,10 @@ import { ResultProduct } from '../../../models/resultProducts';
 
 import full_icon from '../../../assets/svg/full-icon.svg';
 import heart from '../../../assets/images/heart.png';
+import { ListProduct } from '../../../models/modelProducts';
 
 interface Props {
-  product: ResultProduct;
+  product: ListProduct;
 }
 
 export const Item: React.FC<Props> = ({ product }) => {
@@ -23,22 +24,21 @@ export const Item: React.FC<Props> = ({ product }) => {
       <div className="box__information">
         <h6> {product.title} </h6>
         <div className="box__information__price">
-          {product.offert !== false && (
+          {product.productOffer !== false && (
             <span className="box__information__price--original">
-              {' '}
-              {product.offert.regular_amount}{' '}
+              {product.productOffer.regularAmount}
             </span>
           )}
           <div className="box__information__block">
-            {product.country_id === 'ARS' ? (
+            {product.countryId === 'ARS' ? (
               <span className="box__information__price--fraction">{product.price}</span>
             ) : (
               <span className="box__information__price--fraction">U$S {product.price}</span>
             )}
-            {product.offert !== false && (
+            {product.productOffer !== false && (
               <span className="box__information__price--offert">
                 {' '}
-                {product.offert.offer_percentaje}% OFF{' '}
+                {product.productOffer.offerPercentage}% OFF{' '}
               </span>
             )}
           </div>
@@ -48,9 +48,9 @@ export const Item: React.FC<Props> = ({ product }) => {
             <span> Hasta {product.installments} cuotas sin interés </span>
           </div>
         )}
-        {(product.full || product.free_shipping) === true && (
+        {(product.full || product.freeShipping) === true && (
           <div className="box__information__group">
-            {product.free_shipping === true && <span> Envío gratis </span>}
+            {product.freeShipping === true && <span> Envío gratis </span>}
             {product.full === true && <img src={full_icon} alt="full" />}
           </div>
         )}

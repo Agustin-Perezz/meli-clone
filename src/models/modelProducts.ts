@@ -24,7 +24,7 @@ interface Value {
   results: number;
 }
 
-interface ListProduct {
+export interface ListProduct {
   id: string;
   title: string;
   price: string;
@@ -43,7 +43,7 @@ interface ProductOffer {
   offerPercentage: number;
 }
 
-interface BasicInfoProduct {
+export interface BasicInfoProduct {
   queryProduct: string;
   totalResults: number;
 }

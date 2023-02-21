@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { ProductsContext } from './ProductsContext';
-import { ObjectResponse } from '../../models/resultProducts';
 import { getProducts } from '../../services/products';
 import { FiltersContext } from '../filters-context';
+import { ObjectResponse } from '../../models/modelProducts';
 
 interface Props {
   children: JSX.Element | JSX.Element[];

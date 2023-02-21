@@ -1,13 +1,13 @@
-import { ResultProduct, BasicInfo, AvailableSort } from '../../../models/resultProducts';
 import { Item } from './Item';
 import { ViewOptionsProducts } from './ViewOptionsProducts';
 import { ListFiltersActiveMobile } from '../filters/list-filters-active';
 
 import { ExclamationCircleIcon } from '@heroicons/react/outline';
+import { ListProduct, BasicInfoProduct, AvailableSort } from '../../../models/modelProducts';
 
 interface Props {
-  products: ResultProduct[];
-  name: BasicInfo;
+  products: ListProduct[];
+  name: BasicInfoProduct;
   sorts: AvailableSort[];
 }
 
@@ -15,7 +15,7 @@ export const ListItems: React.FC<Props> = ({ products, name, sorts }) => {
   return (
     <div className="container__products">
       <div className="products__header">
-        <h3 className="products__header__title"> {name.query} </h3>
+        <h3 className="products__header__title"> {name.queryProduct} </h3>
         <ViewOptionsProducts sorts={sorts} />
         <ListFiltersActiveMobile />
       </div>

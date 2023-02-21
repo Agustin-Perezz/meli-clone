@@ -12,24 +12,25 @@ export const Products: React.FC = () => {
 
   if (isLoadingData) return <LoadingComponent />;
 
-  if (data !== null && data.basic_info.total !== 0 && initialQuery !== null)
+  console.log('data: ', data);
+  if (data !== null && data.basicInfoProduct.totalResults !== 0 && initialQuery !== null)
     return (
       <div className="products__main__container">
-        <ListFiltersMobile filters={data.available_filters} sorts={data.available_sorts} />
+        <ListFiltersMobile filters={data.availableFilters} sorts={data.availableSorts} />
         <ListFiltersDesktop
-          filters={data.available_filters}
-          basic_information={data.basic_info}
-          categories={data.categories}
+          filters={data.availableFilters}
+          basic_information={data.basicInfoProduct}
+          categories={data.productCategories}
         />
         <ListItems
-          products={data.result_products}
-          name={data.basic_info}
-          sorts={data.available_sorts}
+          products={data.listProducts}
+          name={data.basicInfoProduct}
+          sorts={data.availableSorts}
         />
       </div>
     );
 
-  if (data?.basic_info.total === 0) return <NotFoundProduct />;
+  if (data?.basicInfoProduct.totalResults === 0) return <NotFoundProduct />;
 
   return <Presentation />;
 };

@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { ObjectResponse } from '../../models/resultProducts';
+import { ObjectResponse } from '../../models/modelProducts';
 
 export interface ProductsContextProps {
   isLoadingData: boolean;
