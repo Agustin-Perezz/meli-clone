@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/meli-clone/static/css/main.668b0a09.css",
-    "main.js": "/meli-clone/static/js/main.60b51b91.js",
+    "main.js": "/meli-clone/static/js/main.c5d3841d.js",
     "static/media/ProximaNova-Regular.otf": "/meli-clone/static/media/ProximaNova-Regular.ea03f826587148b7335d.otf",
     "static/media/Proxima-Nova-Reg-It.otf": "/meli-clone/static/media/Proxima-Nova-Reg-It.8fe56e6b5ba432b409d1.otf",
     "static/media/Proxima-Nova-Alt-Light.otf": "/meli-clone/static/media/Proxima-Nova-Alt-Light.3a7c914cbc8035135c38.otf",
@@ -9,7 +9,7 @@
     "static/media/shopping-cart.png": "/meli-clone/static/media/shopping-cart.c3d59ba1c6e684214828.png",
     "static/media/not-found.svg": "/meli-clone/static/media/not-found.dba0fe6a7b7ca51f739a6511b5eace23.svg",
     "index.html": "/meli-clone/index.html",
-    "static/media/full-icon.svg": "/meli-clone/static/media/full-icon.7b2afbf298c00535df1f60deedca983a.svg",
+    "static/media/full-icon.svg": "/meli-clone/static/media/full-icon.d2c271ad7642b720a9e9ac7c1acec562.svg",
     "static/media/hearth.svg": "/meli-clone/static/media/hearth.d530f8214d011cfeb4e6e5e75f08c65b.svg",
     "static/media/filter_icon.svg": "/meli-clone/static/media/filter_icon.973c9563d3a17816d6eb82e76dc91c68.svg",
     "static/media/clock.svg": "/meli-clone/static/media/clock.65d7cb7387d5200e667f70e0df381ede.svg",
@@ -24,10 +24,10 @@
     "static/media/close.svg": "/meli-clone/static/media/close.c465564aa3e99609fe9a5ddd9f7d31f1.svg",
     "static/media/go_back.svg": "/meli-clone/static/media/go_back.50d420d0b1b639af2a5046c4671bf3e1.svg",
     "main.668b0a09.css.map": "/meli-clone/static/css/main.668b0a09.css.map",
-    "main.60b51b91.js.map": "/meli-clone/static/js/main.60b51b91.js.map"
+    "main.c5d3841d.js.map": "/meli-clone/static/js/main.c5d3841d.js.map"
   },
   "entrypoints": [
     "static/css/main.668b0a09.css",
-    "static/js/main.60b51b91.js"
+    "static/js/main.c5d3841d.js"
   ]
 }
