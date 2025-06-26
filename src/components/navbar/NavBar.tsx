@@ -68,7 +68,6 @@ export const NavBar: React.FC = () => {
               placeholder="Estoy buscando..."
               autoComplete="off"
               className="nav__input"
-              role="input"
             />
           </form>
           <ul className="nav__links">

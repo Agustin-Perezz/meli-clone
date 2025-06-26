@@ -21,6 +21,7 @@ export const ProductProvider: React.FC<Props> = ({ children }) => {
   const { id_item } = useParams();
 
   React.useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const getData = async () => {
       const response = await getProduct(id_item!);
       setState({ dataProduct: response });
