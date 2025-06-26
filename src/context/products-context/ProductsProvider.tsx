@@ -26,18 +26,18 @@ export const ProductsProvider: React.FC<Props> = ({ children }) => {
   const [state, setState] = React.useState(INIT_STATE);
 
   React.useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     if (state.queryProduct !== null) {
       getDataProducts();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.queryProduct, filters, idSortActive]);
 
   React.useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const query = localStorage.getItem('queryProduct');
     if (query) {
       setQueryProduct(query);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setQueryProduct = (query: string) => {
