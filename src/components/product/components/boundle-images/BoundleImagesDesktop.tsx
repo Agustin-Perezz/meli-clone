@@ -16,13 +16,13 @@ export const BoundleImagesDesktop: React.FC = () => {
             onClick={() => setActiveImage(url_img)}
           >
             <div className="images__box__content">
-              <img src={url_img} alt="img-product" className="images__box__content--image" />
+              <img src={url_img} alt="" className="images__box__content--image" />
             </div>
           </div>
         ))}
       </div>
       <div className="images__full">
-        <img src={activeImage} alt="image-active" className="images__full--image" />
+        <img src={activeImage} alt="" className="images__full--image" />
       </div>
     </div>
   );

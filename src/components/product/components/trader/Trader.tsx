@@ -25,7 +25,7 @@ export const Trader: React.FC = () => {
         </div>
       </div>
       <div className="trader__group">
-        <img src={medal} alt="picture-medal" className="trader__img" />
+        <img src={medal} alt="" className="trader__img" />
         <div className="trader__group__block">
           <span className="trader__group__block--text trader__medal"> MercadoLíder Platinum </span>
           <span className="trader__group__block--message"> ¡Es uno de los mejores del sitio! </span>
