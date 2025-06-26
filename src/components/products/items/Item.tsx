@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ResultProduct } from '../../../models/resultProducts';
 
 import full_icon from '../../../assets/svg/full-icon.svg';
 import heart from '../../../assets/images/heart.png';
